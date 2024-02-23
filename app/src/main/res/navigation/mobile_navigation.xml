@@ -19,19 +19,24 @@
 
     <fragment
         android:id="@+id/navigation_meditate"
-        android:name="com.example.silentmoon.ui.notifications.NotificationsFragment"
+        android:name="com.example.silentmoon.ui.meditate.MeditateFragment"
         android:label="@string/title_meditate"
         tools:layout="@layout/fragment_meditate" />
 
-    <fragment
+    <activity
         android:id="@+id/navigation_music"
-        android:name="com.example.silentmoon.ui.notifications.NotificationsFragment"
-        android:label="@string/title_meditate"
-        tools:layout="@layout/fragment_meditate" />
+        android:name="com.example.silentmoon.MusicActivity"
+        android:label="@string/title_music"
+        tools:layout="@layout/activity_music" />
+<!--    <fragment-->
+<!--        android:id="@+id/navigation_music"-->
+<!--        android:name="com.example.silentmoon.ui.music.MusicFragment"-->
+<!--        android:label="@string/title_music"-->
+<!--        tools:layout="@layout/activity_music" />-->
 
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="com.example.silentmoon.ui.notifications.NotificationsFragment"
-        android:label="@string/title_meditate"
-        tools:layout="@layout/fragment_meditate" />
+        android:name="com.example.silentmoon.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
 </navigation>

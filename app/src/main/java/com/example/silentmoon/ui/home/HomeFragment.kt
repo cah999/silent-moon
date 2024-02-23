@@ -1,5 +1,6 @@
 package com.example.silentmoon.ui.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +8,8 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.example.silentmoon.CourseActivity
+import com.example.silentmoon.SignInActivity
 import com.example.silentmoon.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -31,6 +34,11 @@ class HomeFragment : Fragment() {
         val textView: TextView = binding.textHome
         homeViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
+        }
+
+        _binding!!.button8.setOnClickListener {
+            val intent = Intent(activity, CourseActivity::class.java)
+            startActivity(intent)
         }
         return root
     }

@@ -1,5 +1,6 @@
-package com.example.silentmoon.ui.notifications
+package com.example.silentmoon.ui.meditate
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,9 +8,12 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.example.silentmoon.CourseActivity
+import com.example.silentmoon.ScrollingActivity
 import com.example.silentmoon.databinding.FragmentMeditateBinding
+import com.example.silentmoon.databinding.FragmentNotificationsBinding
 
-class NotificationsFragment : Fragment() {
+class MeditateFragment : Fragment() {
 
     private var _binding: FragmentMeditateBinding? = null
 
@@ -23,10 +27,15 @@ class NotificationsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val notificationsViewModel =
-            ViewModelProvider(this).get(NotificationsViewModel::class.java)
+            ViewModelProvider(this).get(MeditateViewModel::class.java)
 
         _binding = FragmentMeditateBinding.inflate(inflater, container, false)
         val root: View = binding.root
+
+        _binding!!.button11.setOnClickListener {
+            val intent = Intent(activity, ScrollingActivity::class.java)
+            startActivity(intent)
+        }
 
         val textView: TextView = binding.textNotifications
         notificationsViewModel.text.observe(viewLifecycleOwner) {
