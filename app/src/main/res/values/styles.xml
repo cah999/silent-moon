@@ -8,4 +8,86 @@
         <item name="android:background">@color/black_overlay</item>
         <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
     </style>
+
+    <style name="background_img">
+        <item name="android:scaleType">fitStart</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+    <style name="title">
+        <item name="android:textSize">@dimen/title_font_size</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:lineSpacingExtra">@dimen/base_spacing</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="subtitle">
+        <item name="android:textSize">@dimen/subtitle_font_size</item>
+        <item name="android:lineSpacingExtra">@dimen/base_spacing</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="base_btn" parent="Widget.MaterialComponents.Button.OutlinedButton.Icon">
+        <item name="android:paddingTop">@dimen/top_margin</item>
+        <item name="android:paddingBottom">@dimen/top_margin</item>
+        <item name="cornerRadius">@dimen/button_shape</item>
+        <item name="android:insetBottom">@dimen/_0dp</item>
+        <item name="android:insetTop">@dimen/_0dp</item>
+        <item name="iconGravity">start</item>
+        <item name="iconPadding">@dimen/top_margin</item>
+        <item name="iconSize">@dimen/top_margin</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="iconTint">@color/transparent</item>
+        <item name="iconTintMode">add</item>
+        <item name="strokeWidth">@dimen/_0dp</item>
+    </style>
+
+
+    <style name="main_button" parent="base_btn">
+        <item name="android:backgroundTint">@color/accent</item>
+    </style>
+
+    <style name="upper_text">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/base_font_size</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="checkbox_upper_text" parent="upper_text">
+        <item name="android:textAlignment">textStart</item>
+    </style>
+
+    <style name="upper_clickable_text" parent="upper_text">
+        <item name="android:textColor">@color/accent</item>
+    </style>
+
+    <style name="sign_in_title">
+        <item name="android:textSize">@dimen/smaller_title_font_size</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:lineSpacingExtra">@dimen/base_spacing</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="facebook_btn" parent="base_btn">
+        <item name="android:backgroundTint">@color/purple</item>
+        <item name="android:textSize">@dimen/base_font_size</item>
+    </style>
+
+    <style name="google_btn" parent="base_btn">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">@dimen/base_font_size</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="strokeColor">@color/light_gray</item>
+    </style>
+
+    <style name="checkbox">
+        <item name="colorControlActivated">@color/accent</item>
+    </style>
+
+
+    <dimen name="_0dp">0dp</dimen>
 </resources>

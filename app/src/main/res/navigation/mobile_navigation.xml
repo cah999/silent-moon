@@ -28,11 +28,6 @@
         android:name="com.example.silentmoon.MusicActivity"
         android:label="@string/title_music"
         tools:layout="@layout/activity_music" />
-<!--    <fragment-->
-<!--        android:id="@+id/navigation_music"-->
-<!--        android:name="com.example.silentmoon.ui.music.MusicFragment"-->
-<!--        android:label="@string/title_music"-->
-<!--        tools:layout="@layout/activity_music" />-->
 
     <fragment
         android:id="@+id/navigation_profile"

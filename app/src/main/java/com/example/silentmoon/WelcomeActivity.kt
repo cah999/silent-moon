@@ -13,7 +13,7 @@ class WelcomeActivity : AppCompatActivity() {
         binding = ActivityWelcomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.button3.setOnClickListener {
+        binding.getStartedBtn.setOnClickListener {
             val intent = Intent(this, TopicsActivity::class.java)
             startActivity(intent)
         }

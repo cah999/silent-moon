@@ -12,4 +12,14 @@
     <color name="light_blue_A200">#FF40C4FF</color>
     <color name="light_blue_A400">#FF00B0FF</color>
     <color name="black_overlay">#66000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="accent">#8E97FD</color>
+    <color name="purple">#7583CA</color>
+    <color name="dark_gray">#3F414E</color>
+    <color name="gray">#A1A4B2</color>
+    <color name="light_gray">#EBEAEC</color>
+    <color name="title_color">#FFECCC</color>
+    <color name="green">#6CB28E</color>
+    <color name="input_text_gray">#F2F3F7</color>
+
 </resources>

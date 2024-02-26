@@ -3,6 +3,7 @@ package com.example.silentmoon
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.example.silentmoon.databinding.ActivityMainBinding
 import com.example.silentmoon.databinding.ActivitySignInBinding
 
@@ -13,14 +14,26 @@ class SignInActivity : AppCompatActivity() {
         binding = ActivitySignInBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.button.setOnClickListener {
+        binding.loginButton.setOnClickListener {
             val intent = Intent(this, WelcomeActivity::class.java)
             startActivity(intent)
         }
 
-        binding.buttonNoAccount.setOnClickListener {
+        binding.haveAccount2.setOnClickListener {
             val intent = Intent(this, SignUpActivity::class.java)
             startActivity(intent)
+        }
+
+        binding.loginWithGoogleButton.setOnClickListener {
+            Toast.makeText(this, "Нет, ты не сделаешь этого", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.loginWithFacebookButton.setOnClickListener {
+            Toast.makeText(this, "Нет, ты не сделаешь этого", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.forgotPasswordText.setOnClickListener {
+            Toast.makeText(this, "Увы", Toast.LENGTH_SHORT).show()
         }
     }
 }

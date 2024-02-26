@@ -146,7 +146,42 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="action_settings">Settings</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_play_option">PlayOptionActivity</string>
+    <string name="main_screen_background">Main screen background</string>
+    <string name="silent_moon_logo">Silent Moon Logo</string>
+    <string name="main_screen_center_picture">Main screen center picture</string>
+    <string name="main_header">We are what we do</string>
+    <string name="main_subtitle">Thousands of people are using silent moon for smalls meditation</string>
+    <string name="main_have_account">Already have an account? Sign in</string>
+    <string name="signup">Sign up</string>
+    <string name="login">Log in</string>
+    <string name="main_have_account_desc">Already have an account?</string>
+    <string name="no_account">Don\'t have an account?</string>
+    <string name="sign_in_background">sign_in_background</string>
+
+    <string name="sign_in_title">Welcome Back!</string>
+    <string name="facebook_btn">Continue with Facebook</string>
+    <string name="google_btn">Continue with Google</string>
+    <string name="login_with_email">Or log in with email</string>
+    <string name="input_email">Email address</string>
+    <string name="input_password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="signup_background">signup background</string>
+
+    <string name="sign_up_title">Create your account</string>
+    <string name="sign_up_with_email">Or sign up with email</string>
+    <string name="input_name">Name</string>
+    <string name="read_policy">privacy policy</string>
+
+    <string name="get_started">Get Started</string>
+
+    <string name="welcome_title">Hi {}, welcome to Silent Moon</string>
+    <string name="welcome_subtitle">Explore the app, find some peace of mind to prepare for meditation.</string>
+    <string name="have_read">I have read the</string>
+    <string name="welcome_screen_background">welcome screen background</string>
+    <string name="welcome_screen_bottom_element">Welcome screen bottom purple element</string>
+    <string name="welcome_screen_picture_desc">welcome screen picture</string>
+    <string name="welcome_screen_picture">welcome screen main picture</string>
+
 </resources>
