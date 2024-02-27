@@ -89,5 +89,19 @@
     </style>
 
 
-    <dimen name="_0dp">0dp</dimen>
+    <style name="day_circle">
+        <item name="chipMinTouchTargetSize">@dimen/_0dp</item>
+        <item name="android:layout_width">@dimen/day_circle_size</item>
+        <item name="android:layout_height">@dimen/day_circle_size</item>
+        <item name="textStartPadding">@dimen/_0dp</item>
+        <item name="textEndPadding">@dimen/_0dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="chipBackgroundColor">@drawable/day_circle_background</item>
+        <item name="chipStrokeColor">@drawable/day_circle_stroke</item>
+        <item name="android:textColor">@drawable/day_circle_color</item>
+        <item name="chipStrokeWidth">@dimen/minimal</item>
+        <item name="android:checkable">true</item>
+        <item name="checkedIcon">@null</item>
+    </style>
+
 </resources>

@@ -9,7 +9,6 @@
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="title_activity_main2">MainActivity2</string>
-    <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
@@ -183,5 +182,31 @@
     <string name="welcome_screen_bottom_element">Welcome screen bottom purple element</string>
     <string name="welcome_screen_picture_desc">welcome screen picture</string>
     <string name="welcome_screen_picture">welcome screen main picture</string>
+    <string name="topics_title">What brings you\nto Silent Moon?</string>
+    <string name="topics_subtitle">choose a topic to focus on:</string>
+    <string name="topics_topic_card">topics topic card</string>
+    <string name="topics_background">topics background</string>
+    <string name="time_title">What time would you\nlike to meditate</string>
+    <string name="time_subtitle">Any time you can choose but we recommend first thing in the morning.</string>
+    <string name="time_day_title">Which day would\nyou like to meditate?</string>
+    <string name="day_subtitle">Everyday is best, but we recommend picking at least five.</string>
+    <string name="save">save</string>
+    <string name="no_thanks">no thanks</string>
+    <string name="sunday">SU</string>
+    <string name="monday">M</string>
+    <string name="tuesday">T</string>
+    <string name="wednesday">W</string>
+    <string name="thursday">TH</string>
+    <string name="friday">F</string>
+    <string name="saturday">S</string>
+    <string name="reduce_stress">Reduce Stress\n</string>
+    <string name="improve_performance">Improve Performance\n</string>
+    <string name="increase_happiness">Increase Happiness\n</string>
+    <string name="reduce_anxiety">Reduce Anxiety\n</string>
+    <string name="personal_growth">Personal Growth\n</string>
+    <string name="better_sleep">Better Sleep\n</string>
+    <string name="reduce_pain">Reduce Pain\n</string>
+    <string name="improve_focus">Improve Focus\n</string>
+
 
 </resources>

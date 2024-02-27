@@ -1,26 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
     tools:context=".TimeActivity">
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="а в какое время вам удобно медитироват???"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="189dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/time_title"
+            style="@style/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_20dp"
+            android:layout_marginTop="@dimen/top_margin"
+            android:layout_marginEnd="@dimen/margin_10dp"
+            android:text="@string/time_title"
+            android:textAlignment="textStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/time_subtitle"
+            style="@style/subtitle"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/top_margin"
+            android:text="@string/time_subtitle"
+            android:textAlignment="textStart"
+            app:layout_constraintEnd_toEndOf="@+id/time_title"
+            app:layout_constraintStart_toStartOf="@+id/time_title"
+            app:layout_constraintTop_toBottomOf="@+id/time_title" />
+
+        <com.example.silentmoon.timepicker.TimePickerView
+            android:id="@+id/time_picker"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="@dimen/time_picker_height"
+            android:layout_marginTop="@dimen/text_margin"
+            android:layout_marginEnd="@dimen/margin_20dp"
+            android:background="@drawable/timepicker_background"
+            app:layout_constraintEnd_toEndOf="@+id/time_subtitle"
+            app:layout_constraintStart_toStartOf="@+id/time_subtitle"
+            app:layout_constraintTop_toBottomOf="@+id/time_subtitle"
+            app:tpvBackgroundColor="@color/time_picker_background"
+            app:tpvLineColor="@color/time_picker_line"
+            app:tpvLineWidth="@dimen/minimal"
+            app:tpvTimeEnableAlpha="true"
+            app:tpvTimePaddingStart="@dimen/time_picker_start_padding"
+            app:tpvTimeTextColor="@color/time_picker_selected"
+            app:tpvTimeTextSideColor="@color/time_picker_unselected" />
+
+        <TextView
+            android:id="@+id/time_day_title"
+            style="@style/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_40dp"
+            android:text="@string/time_day_title"
+            android:textAlignment="textStart"
+            app:layout_constraintEnd_toEndOf="@+id/time_picker"
+            app:layout_constraintStart_toStartOf="@+id/time_picker"
+            app:layout_constraintTop_toBottomOf="@+id/time_picker" />
+
+        <TextView
+            android:id="@+id/time_day_subtitle"
+            style="@style/subtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/top_margin"
+            android:text="@string/day_subtitle"
+            android:textAlignment="textStart"
+            app:layout_constraintEnd_toEndOf="@+id/time_day_title"
+            app:layout_constraintStart_toStartOf="@+id/time_day_title"
+            app:layout_constraintTop_toBottomOf="@+id/time_day_title" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/day_circles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20dp"
+            app:chipSpacing="0dp"
+            app:chipSpacingHorizontal="@dimen/day_circle_spacing"
+            app:layout_constraintEnd_toEndOf="@id/time_day_subtitle"
+            app:layout_constraintStart_toStartOf="@id/time_day_subtitle"
+            app:layout_constraintTop_toBottomOf="@id/time_day_subtitle"
+
+            app:singleLine="true">
+
+            <com.google.android.material.chip.Chip
+                style="@style/day_circle"
+                android:text="@string/sunday" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/day_circle"
+                android:text="@string/monday" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/day_circle"
+                android:text="@string/tuesday" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/day_circle"
+                android:text="@string/wednesday" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/day_circle"
+                android:text="@string/thursday" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/day_circle"
+                android:text="@string/friday" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/day_circle"
+                android:text="@string/saturday" />
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <Button
+            android:id="@+id/save_btn"
+            style="@style/main_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/top_margin"
+            android:text="@string/save"
+            app:layout_constraintEnd_toEndOf="@id/time_day_subtitle"
+            app:layout_constraintStart_toStartOf="@id/time_day_subtitle"
+            app:layout_constraintTop_toBottomOf="@id/day_circles" />
+
+        <TextView
+            android:id="@+id/no_thanks_text"
+            style="@style/upper_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/top_margin"
+            android:layout_marginBottom="@dimen/base_margin"
+            android:text="@string/no_thanks"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/time_day_subtitle"
+            app:layout_constraintStart_toStartOf="@id/time_day_subtitle"
+            app:layout_constraintTop_toBottomOf="@id/save_btn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

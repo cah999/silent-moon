@@ -13,6 +13,10 @@
     <color name="light_blue_A400">#FF00B0FF</color>
     <color name="black_overlay">#66000000</color>
     <color name="transparent">#00000000</color>
+    <color name="time_picker_background">#F5F5F9</color>
+    <color name="time_picker_line">#E1E1E5</color>
+    <color name="time_picker_selected">#263238</color>
+    <color name="time_picker_unselected">#A1A4B2</color>
     <color name="accent">#8E97FD</color>
     <color name="purple">#7583CA</color>
     <color name="dark_gray">#3F414E</color>
@@ -21,5 +25,7 @@
     <color name="title_color">#FFECCC</color>
     <color name="green">#6CB28E</color>
     <color name="input_text_gray">#F2F3F7</color>
+    <color name="topic_white">#FEF9F3</color>
+
 
 </resources>

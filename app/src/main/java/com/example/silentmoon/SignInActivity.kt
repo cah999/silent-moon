@@ -1,10 +1,9 @@
 package com.example.silentmoon
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.example.silentmoon.databinding.ActivityMainBinding
+import androidx.appcompat.app.AppCompatActivity
 import com.example.silentmoon.databinding.ActivitySignInBinding
 
 class SignInActivity : AppCompatActivity() {
@@ -25,11 +24,11 @@ class SignInActivity : AppCompatActivity() {
         }
 
         binding.loginWithGoogleButton.setOnClickListener {
-            Toast.makeText(this, "Нет, ты не сделаешь этого", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Ну уж нет", Toast.LENGTH_SHORT).show()
         }
 
         binding.loginWithFacebookButton.setOnClickListener {
-            Toast.makeText(this, "Нет, ты не сделаешь этого", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Мета запрещена в РФ", Toast.LENGTH_SHORT).show()
         }
 
         binding.forgotPasswordText.setOnClickListener {

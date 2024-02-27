@@ -3,16 +3,23 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="_0dp">0dp</dimen>
+    <dimen name="minimal">1dp</dimen>
     <dimen name="app_bar_height">180dp</dimen>
     <dimen name="text_margin">16dp</dimen>
     <dimen name="base_margin">32dp</dimen>
     <dimen name="main_spacing">36dp</dimen>
     <dimen name="top_margin">24dp</dimen>
+    <dimen name="small_margin">13dp</dimen>
     <dimen name="bigger_top_margin">30dp</dimen>
     <dimen name="margin_10dp">10dp</dimen>
     <dimen name="margin_20dp">20dp</dimen>
     <dimen name="margin_40dp">40dp</dimen>
     <dimen name="margin_55dp">55dp</dimen>
+    <dimen name="day_circle_size">41dp</dimen>-->
+
+    <dimen name="text_small_spacing">4dp</dimen>
+    <dimen name="input_text_shape_radius">15dp</dimen>
 
     <dimen name="button_shape">36dp</dimen>
     <dimen name="text_input_height">64dp</dimen>
@@ -23,7 +30,12 @@
     <dimen name="subtitle_font_size">16sp</dimen>
     <dimen name="base_font_size">14sp</dimen>
     <dimen name="base_spacing">10sp</dimen>
-    <dimen name="text_small_spacing">4dp</dimen>
-    <dimen name="input_text_shape_radius">15dp</dimen>
+
+    <dimen name="topic_font">18sp</dimen>
+    <dimen name="time_picker_height">210dp</dimen>
+    <dimen name="timepicker_shape">20dp</dimen>
+    <dimen name="time_picker_start_padding">77dp</dimen>
+    <dimen name="day_circle_spacing">6dp</dimen>
+    <dimen name="margin_5dp">5dp</dimen>
 
 </resources>
