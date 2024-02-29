@@ -1,32 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
     tools:context=".ui.home.HomeFragment">
 
-    <TextView
-        android:id="@+id/text_home"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="164dp"
-        android:text="Как стать миллионером за час"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/logo_imageview"
+            android:layout_width="@dimen/logo_width"
+            android:layout_height="@dimen/logo_height"
+            android:layout_marginHorizontal="@dimen/logo_margin"
+            android:layout_marginTop="@dimen/top_margin"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/silent_moon_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/app_logo" />
+
+        <TextView
+            android:id="@+id/home_title"
+            style="@style/sign_in_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_20dp"
+            android:layout_marginTop="@dimen/margin_40dp"
+            android:layout_marginEnd="@dimen/margin_20dp"
+            android:text="@string/home_title"
+            android:textAlignment="textStart"
+            android:textColor="@color/dark_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logo_imageview" />
+
+        <TextView
+            android:id="@+id/home_subtitle"
+            style="@style/bigger_subtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:text="@string/home_subtitle"
+            app:layout_constraintEnd_toEndOf="@id/home_title"
+            app:layout_constraintStart_toStartOf="@id/home_title"
+            app:layout_constraintTop_toBottomOf="@id/home_title" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/home_recycler"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/top_margin"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintEnd_toEndOf="@+id/home_subtitle"
+            app:layout_constraintStart_toStartOf="@+id/home_subtitle"
+            app:layout_constraintTop_toBottomOf="@id/home_subtitle"
+            app:spanCount="2"
+            tools:itemCount="2"
+            tools:listitem="@layout/home_course_card" />
+
+
+        <TextView
+            android:id="@+id/home_recommended"
+            style="@style/small_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_40dp"
+            android:text="@string/recommended_for_you"
+            android:textStyle="bold|normal"
+            app:layout_constraintEnd_toEndOf="@id/home_recycler"
+            app:layout_constraintStart_toStartOf="@id/home_recycler"
+            app:layout_constraintTop_toBottomOf="@id/home_recycler" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/home_meditation_recommendations"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintEnd_toEndOf="@+id/home_recommended"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/home_recommended"
+            app:layout_constraintTop_toBottomOf="@id/home_recommended"
+            app:spanCount="1"
+            tools:itemCount="2"
+            tools:listitem="@layout/home_meditation_card" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,9 +1,11 @@
-package com.example.silentmoon
+package com.example.silentmoon.ui.signin
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.silentmoon.ui.signup.SignUpActivity
+import com.example.silentmoon.ui.welcome.WelcomeActivity
 import com.example.silentmoon.databinding.ActivitySignInBinding
 
 class SignInActivity : AppCompatActivity() {

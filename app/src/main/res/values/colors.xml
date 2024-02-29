@@ -20,12 +20,11 @@
     <color name="accent">#8E97FD</color>
     <color name="purple">#7583CA</color>
     <color name="dark_gray">#3F414E</color>
+    <color name="bottom_nav_selected_color">#A0A3B1</color>
     <color name="gray">#A1A4B2</color>
     <color name="light_gray">#EBEAEC</color>
     <color name="title_color">#FFECCC</color>
     <color name="green">#6CB28E</color>
     <color name="input_text_gray">#F2F3F7</color>
     <color name="topic_white">#FEF9F3</color>
-
-
 </resources>

@@ -1,10 +1,10 @@
-package com.example.silentmoon
+package com.example.silentmoon.ui.main
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import androidx.appcompat.app.AppCompatDelegate
+import androidx.appcompat.app.AppCompatActivity
+import com.example.silentmoon.ui.signin.SignInActivity
+import com.example.silentmoon.ui.signup.SignUpActivity
 import com.example.silentmoon.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

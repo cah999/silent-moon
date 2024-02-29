@@ -1,8 +1,9 @@
-package com.example.silentmoon
+package com.example.silentmoon.ui.time
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.silentmoon.HomeActivity
 import com.example.silentmoon.databinding.ActivityTimeBinding
 
 class TimeActivity : AppCompatActivity() {

@@ -23,11 +23,13 @@
 
     <dimen name="button_shape">36dp</dimen>
     <dimen name="text_input_height">64dp</dimen>
+    <dimen name="card_course_right_margin">7dp</dimen>
 
 
     <dimen name="title_font_size">30sp</dimen>
     <dimen name="smaller_title_font_size">28sp</dimen>
     <dimen name="subtitle_font_size">16sp</dimen>
+    <dimen name="bigger_subtitle_font_size">20sp</dimen>
     <dimen name="base_font_size">14sp</dimen>
     <dimen name="base_spacing">10sp</dimen>
 
@@ -37,5 +39,21 @@
     <dimen name="time_picker_start_padding">77dp</dimen>
     <dimen name="day_circle_spacing">6dp</dimen>
     <dimen name="margin_5dp">5dp</dimen>
+    <dimen name="logo_width">168dp</dimen>
+    <dimen name="logo_height">30dp</dimen>
+    <dimen name="logo_margin">96dp</dimen>
+
+    <dimen name="play_button_size">40dp</dimen>
+    <dimen name="card_title">18sp</dimen>
+    <dimen name="card_subtitle">11sp</dimen>
+    <dimen name="card_button_text_size">12sp</dimen>
+    <dimen name="card_button_shape">29dp</dimen>
+    <dimen name="card_button_height">35dp</dimen>
+    <dimen name="card_button_width">75dp</dimen>
+    <dimen name="small_title_font_size">24sp</dimen>
+
+    <dimen name="big_card_title">18sp</dimen>
+    <dimen name="meditation_card_width">150dp</dimen>
+    <dimen name="meditation_card_height">110dp</dimen>
 
 </resources>

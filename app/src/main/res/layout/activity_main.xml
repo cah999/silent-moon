@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".MainActivity">
+    tools:context=".ui.main.MainActivity">
 
     <ImageView
         android:id="@+id/main_background_imageview"
@@ -20,11 +20,10 @@
 
     <ImageView
         android:id="@+id/logo_imageview"
-        android:layout_width="168dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="96dp"
+        android:layout_width="@dimen/logo_width"
+        android:layout_height="@dimen/logo_height"
+        android:layout_marginHorizontal="@dimen/logo_margin"
         android:layout_marginTop="@dimen/top_margin"
-        android:layout_marginEnd="96dp"
         android:adjustViewBounds="true"
         android:contentDescription="@string/silent_moon_logo"
         app:layout_constraintEnd_toEndOf="parent"

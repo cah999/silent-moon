@@ -1,4 +1,4 @@
-package com.example.silentmoon
+package com.example.silentmoon.ui.welcome
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

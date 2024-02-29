@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/big_card_background"
+        style="@style/background_img"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/home_big_card_background"
+        android:layout_marginTop="@dimen/margin_20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@drawable/daily_thought_meditation" />
+
+    <ToggleButton
+        android:id="@+id/play_btn"
+        android:layout_width="@dimen/play_button_size"
+        android:layout_height="@dimen/play_button_size"
+        android:layout_marginEnd="@dimen/margin_20dp"
+        android:background="@drawable/ic_night_play"
+        android:textOff=""
+        android:textOn=""
+        app:layout_constraintBottom_toBottomOf="@id/big_card_background"
+        app:layout_constraintRight_toRightOf="@id/big_card_background"
+        app:layout_constraintTop_toTopOf="@id/big_card_background" />
+
+    <TextView
+        android:id="@+id/big_card_title"
+        style="@style/card_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/top_margin"
+        android:layout_marginBottom="@dimen/margin_10dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/big_card_title"
+        app:layout_constraintBottom_toTopOf="@id/big_card_linear_layout"
+        app:layout_constraintLeft_toLeftOf="@id/big_card_background"
+        app:layout_constraintRight_toLeftOf="@id/play_btn"
+        app:layout_constraintTop_toTopOf="@id/big_card_background"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="@string/daily_thought" />
+
+
+    <LinearLayout
+        android:id="@+id/big_card_linear_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/big_card_background"
+        app:layout_constraintEnd_toEndOf="@+id/big_card_title"
+        app:layout_constraintRight_toLeftOf="@id/play_btn"
+        app:layout_constraintStart_toStartOf="@+id/big_card_title"
+        app:layout_constraintTop_toBottomOf="@id/big_card_title">
+
+        <TextView
+            android:id="@+id/big_card_subtitle"
+            style="@style/card_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_5dp"
+            android:textColor="@color/white"
+            tools:text="@string/meditation" />
+
+        <TextView
+            android:id="@+id/big_card_subtitle_1"
+            style="@style/card_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_5dp"
+            android:textColor="@color/white"
+            tools:text="@string/marker" />
+
+        <TextView
+            android:id="@+id/big_card_subtitle_2"
+            style="@style/card_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            tools:text="@string/duration" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

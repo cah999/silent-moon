@@ -9,7 +9,7 @@ import android.text.style.TextAppearanceSpan
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.example.silentmoon.R
-import com.example.silentmoon.TimeActivity
+import com.example.silentmoon.ui.time.TimeActivity
 import com.example.silentmoon.databinding.ActivityTopicsBinding
 
 

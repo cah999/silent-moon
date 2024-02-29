@@ -207,6 +207,24 @@
     <string name="better_sleep">Better Sleep\n</string>
     <string name="reduce_pain">Reduce Pain\n</string>
     <string name="improve_focus">Improve Focus\n</string>
+    <string name="home_title">Good Morning, {}</string>
+    <string name="home_subtitle">We wish you have a good day</string>
+    <string name="recommended_for_you">Recommended for you</string>
+    <string name="meditation">Meditation</string>
+    <string name="marker">•</string>
+    <string name="daily_thought">Daily Thought</string>
+    <string name="start">start</string>
+    <string name="username">{}</string>
+    <string name="basics">Basics</string>
+    <string name="relaxation">Relaxation</string>
+    <string name="course">Course</string>
+    <string name="music">Music</string>
+    <string name="duration">3–10 MIN</string>
+    <string name="happiness">Happiness</string>
+    <string name="focus">Focus</string>
+    <string name="course_background">this is background image for course card</string>
+    <string name="home_big_card_background">home big card background</string>
+    <string name="meditation_card_background">meditation card background</string>
 
 
 </resources>

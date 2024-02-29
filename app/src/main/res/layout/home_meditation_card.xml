@@ -1,0 +1,63 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/meditation_card_width"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:paddingBottom="@dimen/margin_10dp">
+
+    <ImageView
+        android:id="@+id/meditation_card_background"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/meditation_card_background"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/meditation_card_title"
+        style="@style/card_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10dp"
+        app:layout_constraintEnd_toEndOf="@id/meditation_card_background"
+        app:layout_constraintStart_toStartOf="@id/meditation_card_background"
+        app:layout_constraintTop_toBottomOf="@id/meditation_card_background" />
+
+    <LinearLayout
+        android:id="@+id/meditation_card_linear_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/meditation_card_title"
+        app:layout_constraintStart_toStartOf="@+id/meditation_card_title"
+        app:layout_constraintTop_toBottomOf="@id/meditation_card_title">
+
+        <TextView
+            android:id="@+id/meditation_card_subtitle"
+            style="@style/card_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_5dp"
+            tools:text="@string/meditation" />
+
+        <TextView
+            android:id="@+id/meditation_card_subtitle_1"
+            style="@style/card_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_5dp"
+            tools:text="@string/marker" />
+
+        <TextView
+            android:id="@+id/meditation_card_subtitle_2"
+            style="@style/card_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/duration" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/accent"
     android:fitsSystemWindows="true"
-    tools:context=".WelcomeActivity">
+    tools:context=".ui.welcome.WelcomeActivity">
 
     <ImageView
         android:id="@+id/welcome_background"

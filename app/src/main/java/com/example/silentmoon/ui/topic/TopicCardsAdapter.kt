@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.example.silentmoon.TimeActivity
+import com.example.silentmoon.ui.time.TimeActivity
 import com.example.silentmoon.databinding.TopicsTopicBinding
 
 class TopicCardsAdapter(private val context: Context) :

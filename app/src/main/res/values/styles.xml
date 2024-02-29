@@ -29,6 +29,11 @@
         <item name="android:textAlignment">center</item>
     </style>
 
+    <style name="bigger_subtitle" parent="subtitle">
+        <item name="android:textSize">@dimen/bigger_subtitle_font_size</item>
+        <item name="android:textAlignment">textStart</item>
+    </style>
+
     <style name="base_btn" parent="Widget.MaterialComponents.Button.OutlinedButton.Icon">
         <item name="android:paddingTop">@dimen/top_margin</item>
         <item name="android:paddingBottom">@dimen/top_margin</item>
@@ -72,6 +77,11 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="small_title" parent="title">
+        <item name="android:textSize">@dimen/small_title_font_size</item>
+        <item name="android:textAlignment">textStart</item>
+    </style>
+
     <style name="facebook_btn" parent="base_btn">
         <item name="android:backgroundTint">@color/purple</item>
         <item name="android:textSize">@dimen/base_font_size</item>
@@ -103,5 +113,29 @@
         <item name="android:checkable">true</item>
         <item name="checkedIcon">@null</item>
     </style>
+
+    <style name="card_title">
+        <item name="android:textSize">@dimen/card_title</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_10dp</item>
+    </style>
+
+    <style name="card_subtitle">
+        <item name="android:textSize">@dimen/card_subtitle</item>
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+
+    <style name="card_button" parent="base_btn">
+        <item name="android:layout_height">@dimen/card_button_height</item>
+        <item name="android:layout_width">@dimen/card_button_width</item>
+        <item name="android:radius">@dimen/card_button_shape</item>
+        <item name="android:paddingHorizontal">@dimen/margin_10dp</item>
+        <item name="android:paddingVertical">@dimen/margin_10dp</item>
+        <item name="android:textSize">@dimen/card_button_text_size</item>
+        <item name="fontFamily">sans-serif-medium</item>
+    </style>
+
 
 </resources>
