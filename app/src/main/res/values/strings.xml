@@ -225,6 +225,9 @@
     <string name="course_background">this is background image for course card</string>
     <string name="home_big_card_background">home big card background</string>
     <string name="meditation_card_background">meditation card background</string>
+    <string name="light">light</string>
+    <string name="dark">dark</string>
+    <string name="default_theme">default</string>
 
 
 </resources>
