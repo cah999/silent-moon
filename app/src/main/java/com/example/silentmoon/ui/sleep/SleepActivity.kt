@@ -1,10 +1,8 @@
-package com.example.silentmoon
+package com.example.silentmoon.ui.sleep
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.silentmoon.databinding.ActivityMusicBinding
+import androidx.appcompat.app.AppCompatActivity
 import com.example.silentmoon.databinding.ActivitySleepBinding
-import com.example.silentmoon.ui.sleep.SleepFragment
 
 class SleepActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySleepBinding
@@ -14,7 +12,7 @@ class SleepActivity : AppCompatActivity() {
         binding = ActivitySleepBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.button12.setOnClickListener {
+        binding.sleepGetStartedBtn.setOnClickListener {
             finish()
         }
     }

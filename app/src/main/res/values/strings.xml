@@ -269,6 +269,23 @@
     <string name="daily_calm">Daily Calm</string>
     <string name="daily_calm_subtitle">apr 30</string>
     <string name="pause_practice">Pause Practice</string>
+    <string name="sleep_subtitle">Something bedtime stories to help you fall into a deep and natural sleep</string>
+    <string name="sleep_title">Sleep Stories</string>
+    <string name="sleep_screen_background">Sleep Screen Background</string>
+    <string name="night_island">Night Island</string>
+    <string name="sweet_sleep">Sweet Sleep</string>
+    <string name="good_night">Good Night</string>
+    <string name="moon_clouds">Moon Clouds</string>
+    <string name="sleep_music">Sleep Music</string>
+    <string name="sleep_big_card_background">Sleep big card background</string>
+    <string name="ocean_moon">The Ocean Moon</string>
+    <string name="ocean_moon_desc">Non-stop 8-hour mixes of our most popular sleep audio</string>
+    <string name="sleep_duration">45 MIN</string>
+    <string name="welcome_sleep">Welcome to Sleep</string>
+    <string name="welcome_sleep_desc">Explore the new king of sleep. It uses sound and visualisation to create perfect conditions for refreshing sleep.</string>
+    <string name="sleep_welcome_background">Sleep welcome screen background image</string>
+    <string name="welcome_sleep_picture">Welcome sleep picture</string>
+    <string name="sleep_music_background_imageview">Sleep Music background</string>
 
 
 </resources>

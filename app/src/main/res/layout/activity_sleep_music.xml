@@ -1,18 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SleepMusicActivity">
+    android:background="@color/sleep_background"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
 
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="92dp"
-        android:text="Слип музииик"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        tools:context=".home_activity.SleepMusicFragment">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/sleep_music_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/top_margin"
+            android:background="@android:color/transparent"
+            android:paddingStart="@dimen/margin_20dp"
+            android:paddingEnd="@dimen/margin_20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/ic_back"
+            app:title="@string/sleep_music"
+            app:titleCentered="true"
+            app:titleTextAppearance="@style/small_title"
+            app:titleTextColor="@color/sleep_text_color" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/sleep_music_cards"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_50dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sleep_music_toolbar"
+            app:spanCount="2"
+            tools:itemCount="8"
+            tools:listitem="@layout/home_meditation_card" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

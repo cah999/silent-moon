@@ -72,7 +72,7 @@ class MeditateFragment : Fragment(R.layout.fragment_meditate) {
             Topic(R.drawable.enjoy_life, R.string.enjoying_life, R.color.white)
         )
 
-        binding.cardsRecyclerView.apply {
+        binding.sleepMusicCards.apply {
             setHasFixedSize(true)
             layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
             adapter = TopicCardsAdapter(context, intent).apply { submitList(topics) }

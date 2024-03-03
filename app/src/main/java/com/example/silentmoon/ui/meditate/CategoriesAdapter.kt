@@ -40,9 +40,9 @@ class CategoriesAdapter(private val theme: String) :
 
         val isLightTheme = theme == "light"
         val selectedColor =
-            if (isLightTheme) R.color.dark_gray else R.color.bottom_nav_selected_color
+            if (isLightTheme) R.color.dark_gray else R.color.sleep_text_color
         val unselectedColor =
-            if (isLightTheme) R.color.bottom_nav_selected_color else R.color.dark_gray
+            if (isLightTheme) R.color.bottom_nav_selected_color else R.color.sleep_grey
 
         holder.background.apply {
             setBackgroundResource(if (isLightTheme) R.drawable.filter_toggle_bg else R.drawable.filter_night_toggle_bg)
@@ -57,7 +57,7 @@ class CategoriesAdapter(private val theme: String) :
                 holder.filterName.setTextColor(
                     ContextCompat.getColor(
                         context,
-                        if (isLightTheme) R.color.dark_gray else R.color.white
+                        if (isLightTheme) R.color.dark_gray else R.color.sleep_text_color
                     )
                 )
             }

@@ -49,7 +49,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SleepActivity"
+            android:name=".ui.sleep.SleepActivity"
             android:exported="false" />
         <activity
             android:name=".ui.time.TimeActivity"

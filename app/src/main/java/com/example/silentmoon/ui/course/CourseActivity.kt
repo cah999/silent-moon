@@ -9,7 +9,6 @@ import com.example.silentmoon.databinding.ActivityCourseBinding
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
-// todo replace play icons
 class CourseActivity : AppCompatActivity() {
     private lateinit var binding: ActivityCourseBinding
     private val tabNames = arrayOf(R.string.male_voice, R.string.female_voice);

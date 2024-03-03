@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/sleep_big_card_background"
+        style="@style/background_img"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/sleep_big_card_background"
+        android:src="@drawable/ocean_moon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sleep_big_card_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_10dp"
+        android:layout_marginBottom="@dimen/text_margin"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/ocean_moon"
+        android:textColor="@color/sleep_big_card_text_color"
+        android:textSize="@dimen/sleep_big_card_text"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toTopOf="@id/sleep_big_card_subtitle"
+        app:layout_constraintEnd_toEndOf="@id/sleep_big_card_background"
+        app:layout_constraintStart_toStartOf="@id/sleep_big_card_background" />
+
+    <TextView
+        android:id="@+id/sleep_big_card_subtitle"
+        style="@style/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_20dp"
+        android:layout_marginBottom="@dimen/text_margin"
+        android:text="@string/ocean_moon_desc"
+        android:textColor="@color/light_gray"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toTopOf="@id/sleep_button_btn"
+        app:layout_constraintEnd_toEndOf="@id/sleep_big_card_background"
+        app:layout_constraintStart_toStartOf="@id/sleep_big_card_background" />
+
+    <Button
+        android:id="@+id/sleep_button_btn"
+        style="@style/card_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_20dp"
+        android:backgroundTint="@color/light_gray"
+        android:text="@string/start"
+        android:textColor="@color/dark_gray"
+        app:layout_constraintBottom_toBottomOf="@id/sleep_big_card_background"
+        app:layout_constraintEnd_toEndOf="@id/sleep_big_card_background"
+        app:layout_constraintStart_toStartOf="@id/sleep_big_card_background" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

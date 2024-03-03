@@ -59,7 +59,7 @@
             app:layout_constraintTop_toBottomOf="@id/meditate_categories" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/cardsRecyclerView"
+            android:id="@+id/sleep_music_cards"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginHorizontal="@dimen/margin_10dp"
