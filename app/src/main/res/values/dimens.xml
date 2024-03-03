@@ -16,6 +16,7 @@
     <dimen name="margin_20dp">20dp</dimen>
     <dimen name="margin_40dp">40dp</dimen>
     <dimen name="margin_55dp">55dp</dimen>
+    <dimen name="margin_70dp">70dp</dimen>
     <dimen name="day_circle_size">41dp</dimen>-->
 
     <dimen name="text_small_spacing">4dp</dimen>
@@ -55,5 +56,10 @@
     <dimen name="big_card_title">18sp</dimen>
     <dimen name="meditation_card_width">150dp</dimen>
     <dimen name="meditation_card_height">110dp</dimen>
+    <dimen name="big_title_size">34sp</dimen>
+    <dimen name="music_line_height">3dp</dimen>
+    <dimen name="music_line_point">6dp</dimen>
+    <dimen name="category_size">65dp</dimen>
+    <dimen name="category_radius">25dp</dimen>-->
 
 </resources>

@@ -25,7 +25,7 @@ import java.time.format.DateTimeFormatter
 
 
 // за основу взят этот проект
-// https://github.com/limxing/DatePickerView )))))
+// https://github.com/limxing/DatePickerView
 
 class TimePickerView @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0

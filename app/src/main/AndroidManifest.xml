@@ -30,10 +30,10 @@
             android:label="@string/title_activity_scrolling"
             android:theme="@style/Theme.SilentMoon.NoActionBar" />
         <activity
-            android:name=".MusicActivity"
+            android:name=".ui.music.MusicActivity"
             android:exported="false" />
         <activity
-            android:name=".CourseActivity"
+            android:name=".ui.course.CourseActivity"
             android:exported="false" />
         <activity
             android:name=".WelcomeSleepActivity"

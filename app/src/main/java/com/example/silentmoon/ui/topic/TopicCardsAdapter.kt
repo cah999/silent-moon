@@ -7,10 +7,10 @@ import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.example.silentmoon.ui.time.TimeActivity
 import com.example.silentmoon.databinding.TopicsTopicBinding
 
-class TopicCardsAdapter(private val context: Context) :
+class TopicCardsAdapter(private val context: Context,
+    private val nextIntent: Intent) :
     ListAdapter<Topic, TopicCardsAdapter.ViewHolder>(TopicDiffCallback()) {
 
     inner class ViewHolder(binding: TopicsTopicBinding) : RecyclerView.ViewHolder(binding.root) {
@@ -19,7 +19,7 @@ class TopicCardsAdapter(private val context: Context) :
 
         init {
             itemView.setOnClickListener {
-                context.startActivity(Intent(context, TimeActivity::class.java))
+                context.startActivity(nextIntent)
             }
         }
     }

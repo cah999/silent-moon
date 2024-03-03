@@ -27,4 +27,9 @@
     <color name="green">#6CB28E</color>
     <color name="input_text_gray">#F2F3F7</color>
     <color name="topic_white">#FEF9F3</color>
+    <color name="divider">#15ADB8D9</color>
+    <color name="music_line_active">#80A0A3B1</color>
+    <color name="music_line_not_active">#403F414E</color>
+    <color name="music_background">#FAF7F2</color>
+    <color name="music_background_30">#30BABCC6</color>
 </resources>

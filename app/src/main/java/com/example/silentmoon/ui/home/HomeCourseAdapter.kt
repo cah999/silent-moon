@@ -43,6 +43,7 @@ class HomeCourseAdapter(
 
         init {
             itemView.setOnClickListener { context.startActivity(intent) }
+            button.setOnClickListener { context.startActivity(intent) }
         }
     }
 

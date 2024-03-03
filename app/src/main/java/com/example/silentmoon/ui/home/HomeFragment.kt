@@ -8,12 +8,10 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.PagerSnapHelper
-import com.example.silentmoon.CourseActivity
 import com.example.silentmoon.R
 import com.example.silentmoon.databinding.FragmentHomeBinding
+import com.example.silentmoon.ui.course.CourseActivity
 
-// todo rename drawables
-// todo refactor this file pls)
 
 data class HomeMeditation(
     val image: Int, val title: Int, val duration: Int

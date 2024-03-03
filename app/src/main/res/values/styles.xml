@@ -137,5 +137,9 @@
         <item name="fontFamily">sans-serif-medium</item>
     </style>
 
-
+    <style name="time">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">@dimen/subtitle_font_size</item>
+        <item name="android:textColor">@color/dark_gray</item>
+    </style>
 </resources>

@@ -6,10 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
-import com.example.silentmoon.MusicActivity
-import com.example.silentmoon.R
-import com.example.silentmoon.databinding.FragmentMeditateBinding
 import com.example.silentmoon.databinding.FragmentMusicBinding
 
 class MusicFragment : Fragment() {
