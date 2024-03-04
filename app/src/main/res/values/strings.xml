@@ -286,6 +286,16 @@
     <string name="sleep_welcome_background">Sleep welcome screen background image</string>
     <string name="welcome_sleep_picture">Welcome sleep picture</string>
     <string name="sleep_music_background_imageview">Sleep Music background</string>
+    <string name="divider">Divider</string>
+    <string name="related">Related</string>
+    <string name="play">play</string>
+    <string name="nickname">Afsar</string>
+    <string name="total_duration">Total duration</string>
+    <string name="average_duration">average duration</string>
+    <string name="longest_streak">Longest Streak</string>
+    <string name="favorite_music">favorite music</string>
+    <string name="logout">Logout</string>
+    <string name="profile_picture">Profile picture</string>
 
 
 </resources>

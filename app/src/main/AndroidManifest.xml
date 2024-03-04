@@ -36,18 +36,8 @@
             android:name=".ui.course.CourseActivity"
             android:exported="false" />
         <activity
-            android:name=".WelcomeSleepActivity"
-            android:exported="false" />
-        <activity
             android:name=".HomeActivity"
-            android:exported="true"
-            android:label="@string/title_activity_home">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".ui.sleep.SleepActivity"
             android:exported="false" />
@@ -71,11 +61,11 @@
             android:name=".ui.main.MainActivity"
             android:exported="true"
             android:theme="@style/Theme.SilentMoon">
-            <!--            <intent-filter>-->
-            <!--                <action android:name="android.intent.action.MAIN" />-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
-            <!--            </intent-filter>-->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

@@ -1,9 +1,14 @@
 package com.example.silentmoon
 
+import android.content.Intent
 import android.os.Bundle
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.silentmoon.databinding.ActivityPlayOptionBinding
+import com.example.silentmoon.ui.sleep.SleepCard
+import com.example.silentmoon.ui.sleep.SleepCardsAdapter
+import com.example.silentmoon.ui.sleep.SleepSpaceDecoration
 
 class PlayOptionActivity : AppCompatActivity() {
 
@@ -11,15 +16,33 @@ class PlayOptionActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         binding = ActivityPlayOptionBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setSupportActionBar(findViewById(R.id.sleep_music_toolbar))
-        binding.toolbarLayout.title = title
-        binding.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
+        val recyclerIntent = Intent(this, PlayOptionActivity::class.java)
+        val recommendations: RecyclerView = binding.relatedCards
+        recommendations.setHasFixedSize(true)
+        val cards = listOf(
+            SleepCard(R.drawable.moon_clouds, R.string.moon_clouds, recyclerIntent),
+            SleepCard(R.drawable.sweet_sleep, R.string.sweet_sleep, recyclerIntent)
+        )
+        recommendations.apply {
+            layoutManager = GridLayoutManager(context, 2, GridLayoutManager.VERTICAL, false)
+            adapter = SleepCardsAdapter(context, cards)
+        }
+        recommendations.addItemDecoration(
+            SleepSpaceDecoration(
+                resources.getDimension(R.dimen.margin_10dp).toInt()
+            )
+        )
+
+        binding.playToolbar.setNavigationOnClickListener {
+            finish()
+        }
+
+        binding.playButton.setOnClickListener {
+            val playIntent = Intent(this, SleepMusicPlayer::class.java)
+            startActivity(playIntent)
         }
     }
 }

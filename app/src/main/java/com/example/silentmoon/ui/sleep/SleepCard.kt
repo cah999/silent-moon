@@ -5,5 +5,5 @@ import android.content.Intent
 data class SleepCard(
     val background: Int,
     val title: Int,
-    val intent: Intent
+    val intent: Intent?
 )
