@@ -20,6 +20,7 @@
         <item name="android:lineSpacingExtra">@dimen/base_spacing</item>
         <item name="android:textAlignment">center</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:font">@font/roboto_bold</item>
     </style>
 
     <style name="subtitle">
@@ -27,6 +28,7 @@
         <item name="android:lineSpacingExtra">@dimen/base_spacing</item>
         <item name="android:textColor">@color/gray</item>
         <item name="android:textAlignment">center</item>
+        <item name="android:font">@font/roboto_regular</item>
     </style>
 
     <style name="bigger_subtitle" parent="subtitle">
@@ -47,6 +49,7 @@
         <item name="iconTint">@color/transparent</item>
         <item name="iconTintMode">add</item>
         <item name="strokeWidth">@dimen/_0dp</item>
+        <item name="android:font">@font/helvetica_neue_medium</item>
     </style>
 
 
@@ -59,6 +62,8 @@
         <item name="android:textSize">@dimen/base_font_size</item>
         <item name="android:textColor">@color/gray</item>
         <item name="android:textAlignment">center</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:font">@font/roboto_regular</item>
     </style>
 
     <style name="checkbox_upper_text" parent="upper_text">
@@ -95,7 +100,7 @@
     </style>
 
     <style name="checkbox">
-        <item name="colorControlActivated">@color/accent</item>
+        <item name="buttonTint">@drawable/checkbox_selector</item>
     </style>
 
 
@@ -112,6 +117,7 @@
         <item name="chipStrokeWidth">@dimen/minimal</item>
         <item name="android:checkable">true</item>
         <item name="checkedIcon">@null</item>
+        <item name="fontFamily">@font/helvetica_neue_medium</item>
     </style>
 
     <style name="card_title">
@@ -145,5 +151,10 @@
 
     <style name="time_sleep" parent="time">
         <item name="android:textColor">@color/sleep_text_color</item>
+    </style>
+
+    <style name="input_text">
+        <item name="android:font">@font/helvetica_neue_light</item>
+        <item name="android:textColorHint">@color/gray</item>
     </style>
 </resources>

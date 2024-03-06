@@ -35,6 +35,7 @@
     <dimen name="bigger_subtitle_font_size">20sp</dimen>
     <dimen name="base_font_size">14sp</dimen>
     <dimen name="base_spacing">10sp</dimen>
+    <dimen name="small_spacing">7sp</dimen>
 
     <dimen name="topic_font">18sp</dimen>
     <dimen name="time_picker_height">210dp</dimen>

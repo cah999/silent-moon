@@ -14,21 +14,16 @@
         android:theme="@style/Theme.SilentMoon"
         tools:targetApi="31">
         <activity
-            android:name=".PlayOptionActivity"
+            android:name=".ui.play_option.PlayOptionActivity"
             android:exported="false"
             android:label="@string/title_activity_play_option"
             android:theme="@style/Theme.SilentMoon.NoActionBar" />
         <activity
-            android:name=".SleepMusicPlayer"
+            android:name=".ui.sleep_player.SleepMusicPlayer"
             android:exported="false" />
         <activity
-            android:name=".SleepMusicActivity"
+            android:name=".ui.sleep_music.SleepMusicActivity"
             android:exported="false" />
-        <activity
-            android:name=".ScrollingActivity"
-            android:exported="false"
-            android:label="@string/title_activity_scrolling"
-            android:theme="@style/Theme.SilentMoon.NoActionBar" />
         <activity
             android:name=".ui.music.MusicActivity"
             android:exported="false" />
@@ -36,7 +31,7 @@
             android:name=".ui.course.CourseActivity"
             android:exported="false" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".ui.home.HomeActivity"
             android:exported="false" />
         <activity
             android:name=".ui.sleep.SleepActivity"

@@ -1,14 +1,16 @@
-package com.example.silentmoon
+package com.example.silentmoon.ui.play_option
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.silentmoon.R
 import com.example.silentmoon.databinding.ActivityPlayOptionBinding
 import com.example.silentmoon.ui.sleep.SleepCard
 import com.example.silentmoon.ui.sleep.SleepCardsAdapter
 import com.example.silentmoon.ui.sleep.SleepSpaceDecoration
+import com.example.silentmoon.ui.sleep_player.SleepMusicPlayer
 
 class PlayOptionActivity : AppCompatActivity() {
 

@@ -1,10 +1,11 @@
 package com.example.silentmoon.ui.topic
 
 import android.content.Intent
+import android.graphics.Typeface
 import android.os.Bundle
 import android.text.Spannable
-import android.text.SpannableStringBuilder
-import android.text.style.TextAppearanceSpan
+import android.text.SpannableString
+import android.text.style.StyleSpan
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
@@ -37,15 +38,13 @@ class TopicsActivity : AppCompatActivity() {
                 submitList(viewModel.topics)
             }
         }
-
-        with(SpannableStringBuilder(getString(R.string.topics_title))) {
-            setSpan(
-                TextAppearanceSpan(this@TopicsActivity, R.style.title),
-                0,
-                15,
-                Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
-            )
-            binding.topicsTitle.text = this
+        val topicsTitle = getString(R.string.topics_title)
+        val endOfBoldText = topicsTitle.indexOf("\n")
+        if (endOfBoldText != -1) {
+            val spannableString = SpannableString(topicsTitle).apply {
+                setSpan(StyleSpan(Typeface.BOLD), 0, endOfBoldText, Spannable.SPAN_INCLUSIVE_INCLUSIVE)
+            }
+            binding.topicsTitle.text = spannableString
         }
     }
 }

@@ -1,9 +1,10 @@
-package com.example.silentmoon
+package com.example.silentmoon.ui.home
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
+import com.example.silentmoon.R
 import com.example.silentmoon.databinding.ActivityHomeBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 

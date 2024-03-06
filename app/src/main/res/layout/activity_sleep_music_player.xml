@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/sleep_background"
     android:fitsSystemWindows="true"
-    tools:context=".SleepMusicActivity">
+    tools:context=".ui.sleep_music.SleepMusicActivity">
 
     <ImageView
         android:id="@+id/sleep_music_background"

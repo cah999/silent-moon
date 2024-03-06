@@ -17,6 +17,7 @@
         android:layout_marginEnd="@dimen/margin_20dp"
         android:text="@string/topics_title"
         android:textAlignment="textStart"
+        android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

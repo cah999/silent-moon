@@ -10,9 +10,9 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.silentmoon.PlayOptionActivity
+import com.example.silentmoon.ui.play_option.PlayOptionActivity
 import com.example.silentmoon.R
-import com.example.silentmoon.SleepMusicActivity
+import com.example.silentmoon.ui.sleep_music.SleepMusicActivity
 import com.example.silentmoon.databinding.FragmentSleepBinding
 import com.example.silentmoon.ui.meditate.CategoriesAdapter
 import com.google.android.material.bottomnavigation.BottomNavigationView

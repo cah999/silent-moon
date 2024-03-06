@@ -40,11 +40,11 @@
         style="@style/title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/top_margin"
+        android:layout_marginHorizontal="@dimen/margin_50dp"
         android:layout_marginTop="@dimen/top_margin"
-        android:layout_marginEnd="@dimen/top_margin"
         android:text="@string/welcome_title"
         android:textColor="@color/title_color"
+        android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/logo_imageview" />
@@ -54,11 +54,12 @@
         style="@style/subtitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_20dp"
         android:layout_marginTop="@dimen/top_margin"
         android:text="@string/welcome_subtitle"
         android:textColor="@color/light_gray"
-        app:layout_constraintEnd_toEndOf="@id/welcome_title"
-        app:layout_constraintStart_toStartOf="@id/welcome_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/welcome_title" />
 
     <ImageView
@@ -88,7 +89,6 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginHorizontal="@dimen/base_margin"
-        android:layout_marginTop="@dimen/top_margin"
         android:layout_marginBottom="@dimen/margin_10dp"
         android:adjustViewBounds="true"
         android:contentDescription="@string/welcome_screen_picture"
@@ -104,11 +104,14 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/base_margin"
+        android:layout_marginHorizontal="@dimen/margin_20dp"
         android:backgroundTint="@color/light_gray"
         android:text="@string/get_started"
         android:textColor="@color/black"
 
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="@id/welcome_title"
-        app:layout_constraintRight_toRightOf="@id/welcome_title" />
+        app:layout_constraintRight_toRightOf="@id/welcome_title"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

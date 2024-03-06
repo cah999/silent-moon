@@ -22,6 +22,7 @@
             android:layout_marginEnd="@dimen/margin_10dp"
             android:text="@string/time_title"
             android:textAlignment="textStart"
+            android:textSize="@dimen/small_title_font_size"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -64,6 +65,7 @@
             android:layout_marginTop="@dimen/margin_40dp"
             android:text="@string/time_day_title"
             android:textAlignment="textStart"
+            android:textSize="@dimen/small_title_font_size"
             app:layout_constraintEnd_toEndOf="@+id/time_picker"
             app:layout_constraintStart_toStartOf="@+id/time_picker"
             app:layout_constraintTop_toBottomOf="@+id/time_picker" />
@@ -85,12 +87,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_20dp"
+            android:fontFamily="@font/helvetica_neue_medium"
             app:chipSpacing="0dp"
             app:chipSpacingHorizontal="@dimen/day_circle_spacing"
             app:layout_constraintEnd_toEndOf="@id/time_day_subtitle"
             app:layout_constraintStart_toStartOf="@id/time_day_subtitle"
             app:layout_constraintTop_toBottomOf="@id/time_day_subtitle"
-
             app:singleLine="true">
 
             <com.google.android.material.chip.Chip

@@ -151,7 +151,7 @@
     <string name="silent_moon_logo">Silent Moon Logo</string>
     <string name="main_screen_center_picture">Main screen center picture</string>
     <string name="main_header">We are what we do</string>
-    <string name="main_subtitle">Thousands of people are using silent moon for smalls meditation</string>
+    <string name="main_subtitle">Thousands of people are using silent\nmoon for smalls meditation</string>
     <string name="main_have_account">Already have an account? Sign in</string>
     <string name="signup">Sign up</string>
     <string name="login">Log in</string>
@@ -175,7 +175,7 @@
 
     <string name="get_started">Get Started</string>
 
-    <string name="welcome_title">Hi {}, welcome to Silent Moon</string>
+    <string name="welcome_title">Hi %s, Welcome\n to Silent Moon</string>
     <string name="welcome_subtitle">Explore the app, find some peace of mind to prepare for meditation.</string>
     <string name="have_read">I have read the</string>
     <string name="welcome_screen_background">welcome screen background</string>
@@ -186,9 +186,9 @@
     <string name="topics_subtitle">choose a topic to focus on:</string>
     <string name="topics_topic_card">topics topic card</string>
     <string name="topics_background">topics background</string>
-    <string name="time_title">What time would you\nlike to meditate</string>
+    <string name="time_title">What time would you\nlike to meditate?</string>
     <string name="time_subtitle">Any time you can choose but we recommend first thing in the morning.</string>
-    <string name="time_day_title">Which day would\nyou like to meditate?</string>
+    <string name="time_day_title">Which day would you\nlike to meditate?</string>
     <string name="day_subtitle">Everyday is best, but we recommend picking at least five.</string>
     <string name="save">save</string>
     <string name="no_thanks">no thanks</string>
@@ -206,7 +206,7 @@
     <string name="personal_growth">Personal Growth</string>
     <string name="better_sleep">Better Sleep</string>
     <string name="reduce_pain">Reduce Pain</string>
-    <string name="improve_focus">Improve Focus</string>
+    <string name="improve_focus">Improve\nFocus</string>
     <string name="home_title">Good Morning, {}</string>
     <string name="home_subtitle">We wish you have a good day</string>
     <string name="recommended_for_you">Recommended for you</string>
@@ -296,6 +296,16 @@
     <string name="favorite_music">favorite music</string>
     <string name="logout">Logout</string>
     <string name="profile_picture">Profile picture</string>
+    <string name="mysharedpref">MySharedPref</string>
+    <string name="name">name</string>
+    <string name="btn_click_fail_1">А вот и нет</string>
+    <string name="button_click_fail_2">Не хочу...</string>
+    <string name="policy_toast">Тут будет политика конфиденциальности</string>
+    <string name="button_click_failed_3">Ну уж нет</string>
+    <string name="button_click_failed_4">Мета запрещена в РФ</string>
+    <string name="unlucky">Увы</string>
+    <string name="default_nickname">Afsar</string>
+    <string name="time_with_us">1 year with us</string>
 
 
 </resources>

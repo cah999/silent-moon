@@ -9,8 +9,10 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.silentmoon.databinding.TopicsTopicBinding
 
-class TopicCardsAdapter(private val context: Context,
-    private val nextIntent: Intent) :
+class TopicCardsAdapter(
+    private val context: Context,
+    private val nextIntent: Intent
+) :
     ListAdapter<Topic, TopicCardsAdapter.ViewHolder>(TopicDiffCallback()) {
 
     inner class ViewHolder(binding: TopicsTopicBinding) : RecyclerView.ViewHolder(binding.root) {

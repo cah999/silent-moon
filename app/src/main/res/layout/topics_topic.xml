@@ -25,6 +25,8 @@
         android:layout_marginBottom="@dimen/text_margin"
         android:textSize="@dimen/topic_font"
         android:textStyle="bold"
+        android:lineSpacingExtra="@dimen/small_spacing"
+        android:fontFamily="@font/helvetica_neue_bold"
         app:layout_constraintBottom_toBottomOf="@id/topic_background"
         app:layout_constraintEnd_toEndOf="@id/topic_background"
         app:layout_constraintStart_toStartOf="@id/topic_background" />

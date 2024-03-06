@@ -11,6 +11,7 @@ import android.view.Gravity
 import android.view.MotionEvent
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.core.content.res.ResourcesCompat
 import androidx.core.view.children
 import androidx.core.view.get
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -48,7 +49,7 @@ class TimePickerView @JvmOverloads constructor(
     private val result = IntArray(3)
     var listener: ((IntArray) -> Unit)? = null
 
-    var drawListener: PickerView.DrawListener? = null
+    private var drawListener: PickerView.DrawListener? = null
 
 
     private val scrollListener = object : RecyclerView.OnScrollListener() {
@@ -114,8 +115,6 @@ class TimePickerView @JvmOverloads constructor(
         textSize = it.getDimension(
             R.styleable.TimePickerView_tpvTimeTextSize, 20 * resources.displayMetrics.density
         )
-        val timeShowSize = it.getInt(R.styleable.TimePickerView_tpvTimeSize, 5)
-        if (timeShowSize % 2 == 0 || timeShowSize < 3) throw Throwable("tpvTimeSize value must be odd number and must be bigger than 2")
         datePaddingEnd = it.getDimension(
             R.styleable.TimePickerView_tpvTimePaddingEnd, resources.displayMetrics.density
         ).toInt()
@@ -280,6 +279,7 @@ class TimePickerView @JvmOverloads constructor(
                 setTextColor(textSelectColor)
                 pTextSelectColor = textColor
                 pTextColor = textSelectColor
+                typeface = ResourcesCompat.getFont(context, R.font.helvetica_neue_medium)
             }) {
 
             }

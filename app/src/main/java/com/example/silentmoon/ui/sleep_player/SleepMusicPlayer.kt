@@ -1,7 +1,8 @@
-package com.example.silentmoon
+package com.example.silentmoon.ui.sleep_player
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.example.silentmoon.R
 
 class SleepMusicPlayer : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

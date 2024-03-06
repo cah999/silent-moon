@@ -4,9 +4,10 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.silentmoon.R
+import com.example.silentmoon.databinding.ActivitySignInBinding
 import com.example.silentmoon.ui.signup.SignUpActivity
 import com.example.silentmoon.ui.welcome.WelcomeActivity
-import com.example.silentmoon.databinding.ActivitySignInBinding
 
 class SignInActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySignInBinding
@@ -26,15 +27,17 @@ class SignInActivity : AppCompatActivity() {
         }
 
         binding.loginWithGoogleButton.setOnClickListener {
-            Toast.makeText(this, "Ну уж нет", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.button_click_failed_3), Toast.LENGTH_SHORT)
+                .show()
         }
 
         binding.loginWithFacebookButton.setOnClickListener {
-            Toast.makeText(this, "Мета запрещена в РФ", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.button_click_failed_4), Toast.LENGTH_SHORT)
+                .show()
         }
 
         binding.forgotPasswordText.setOnClickListener {
-            Toast.makeText(this, "Увы", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.unlucky), Toast.LENGTH_SHORT).show()
         }
     }
 }

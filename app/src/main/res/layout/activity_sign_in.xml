@@ -94,6 +94,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/input_email_text"
+                style="@style/input_text"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/input_text_background"
@@ -117,6 +118,7 @@
             app:passwordToggleTint="@color/dark_gray">
 
             <com.google.android.material.textfield.TextInputEditText
+                style="@style/input_text"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/input_text_background"
@@ -145,6 +147,7 @@
             android:text="@string/forgot_password"
             android:textAlignment="center"
             android:textColor="@color/dark_gray"
+            android:fontFamily="@font/roboto_regular"
             app:layout_constrainedHeight="true"
             app:layout_constrainedWidth="true"
             app:layout_constraintBottom_toTopOf="@id/have_account"
