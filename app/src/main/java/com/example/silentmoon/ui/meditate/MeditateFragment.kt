@@ -12,6 +12,8 @@ import com.example.silentmoon.R
 import com.example.silentmoon.databinding.FragmentMeditateBinding
 import com.example.silentmoon.ui.music.MusicActivity
 import com.example.silentmoon.ui.topic.TopicCardsAdapter
+import com.example.silentmoon.ui.utils.CategoriesAdapter
+import com.example.silentmoon.ui.utils.CategoriesItemDecoration
 
 class MeditateFragment : Fragment(R.layout.fragment_meditate) {
     private lateinit var binding: FragmentMeditateBinding
@@ -70,7 +72,7 @@ class MeditateFragment : Fragment(R.layout.fragment_meditate) {
 
         binding.sleepMusicCards.apply {
             layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
-            adapter = TopicCardsAdapter(context, intent).apply { submitList(viewModel.topics) }
+            adapter = TopicCardsAdapter(context, intent, viewModel.topics)
         }
     }
 }

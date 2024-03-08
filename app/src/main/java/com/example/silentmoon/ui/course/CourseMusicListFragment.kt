@@ -10,14 +10,12 @@ import com.example.silentmoon.R
 import com.example.silentmoon.databinding.CourseMusicListBinding
 import com.example.silentmoon.ui.music.MusicActivity
 
-class CourseMusicListFragment : Fragment(R.layout.course_music_list) {
+class CourseMusicListFragment(
+    private val courseItems: List<CourseItem>
+) : Fragment(R.layout.course_music_list) {
     private lateinit var binding: CourseMusicListBinding
 
-    private val courseItems = listOf(
-        CourseItem(R.string.focus_attention, R.string.duration_10, "accent"),
-        CourseItem(R.string.body_scan, R.string.duration_5, "regular"),
-        CourseItem(R.string.making_happiness, R.string.duration_3, "regular")
-    )
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         binding = CourseMusicListBinding.bind(view)

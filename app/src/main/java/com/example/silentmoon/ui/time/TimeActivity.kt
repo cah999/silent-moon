@@ -19,6 +19,11 @@ class TimeActivity : AppCompatActivity() {
         binding.saveBtn.setOnClickListener {
             startActivity(intent)
 //            Log.d("SELECTED TIME", binding.timePicker.getSelectedTime().toString())
+//            Log.d(
+//                "SELECTED DAYS",
+//                binding.dayCircles.children.toList().filter { (it as Chip).isChecked }
+//                    .joinToString(", ") { (it as Chip).text }
+//            )
         }
 
         binding.noThanksText.setOnClickListener {

@@ -1,4 +1,4 @@
-package com.example.silentmoon.ui.meditate
+package com.example.silentmoon.ui.utils
 
 import android.view.View
 

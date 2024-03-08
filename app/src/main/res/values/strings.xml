@@ -308,6 +308,7 @@
     <string name="default_nickname">Afsar</string>
     <string name="time_with_us">1 year with us</string>
     <string name="lock_icon">lock icon</string>
+    <string name="night">night</string>
 
 
 </resources>

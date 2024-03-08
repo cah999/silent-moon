@@ -15,24 +15,24 @@ import com.example.silentmoon.ui.sleep_player.SleepMusicPlayer
 class PlayOptionActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityPlayOptionBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityPlayOptionBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val recyclerIntent = Intent(this, PlayOptionActivity::class.java)
-        val recommendations: RecyclerView = binding.relatedCards
-        recommendations.setHasFixedSize(true)
+
+        val intent = Intent(this, PlayOptionActivity::class.java)
+        val relatedRecycler: RecyclerView = binding.relatedCards
+        relatedRecycler.setHasFixedSize(true)
         val cards = listOf(
-            SleepCard(R.drawable.good_night_background, R.string.moon_clouds, recyclerIntent),
-            SleepCard(R.drawable.sweet_sleep_background, R.string.sweet_sleep, recyclerIntent)
+            SleepCard(R.drawable.good_night_background, R.string.moon_clouds, intent),
+            SleepCard(R.drawable.sweet_sleep_background, R.string.sweet_sleep, intent)
         )
-        recommendations.apply {
+        relatedRecycler.apply {
             layoutManager = GridLayoutManager(context, 2, GridLayoutManager.VERTICAL, false)
             adapter = SleepCardsAdapter(context, cards)
         }
-        recommendations.addItemDecoration(
+        relatedRecycler.addItemDecoration(
             SleepSpaceDecoration(
                 resources.getDimension(R.dimen.margin_10dp).toInt()
             )

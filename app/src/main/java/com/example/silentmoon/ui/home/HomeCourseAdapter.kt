@@ -13,14 +13,6 @@ import com.example.silentmoon.R
 import com.example.silentmoon.databinding.HomeBigCardBinding
 import com.example.silentmoon.databinding.HomeCourseCardBinding
 
-data class HomeCourse(
-    val image: Int,
-    val title: Int,
-    val subtitle: Int,
-    val duration: Int,
-    val theme: Int
-)
-
 class HomeCourseAdapter(
     private val context: Context,
     private val data: List<HomeCourse>,

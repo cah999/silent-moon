@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.example.silentmoon.R
 import com.example.silentmoon.databinding.FragmentHomeBinding
 import com.example.silentmoon.ui.course.CourseActivity
-import com.example.silentmoon.ui.meditate.CategoriesItemDecoration
+import com.example.silentmoon.ui.utils.CategoriesItemDecoration
 
 
 class HomeFragment : Fragment() {

@@ -7,15 +7,16 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.silentmoon.R
 import com.example.silentmoon.databinding.FragmentSleepBinding
-import com.example.silentmoon.ui.meditate.CategoriesAdapter
-import com.example.silentmoon.ui.meditate.CategoriesItemDecoration
 import com.example.silentmoon.ui.play_option.PlayOptionActivity
 import com.example.silentmoon.ui.sleep_music.SleepMusicActivity
+import com.example.silentmoon.ui.utils.CategoriesAdapter
+import com.example.silentmoon.ui.utils.CategoriesItemDecoration
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class SleepFragment : Fragment() {
@@ -24,6 +25,7 @@ class SleepFragment : Fragment() {
 
     private val binding get() = _binding!!
     private var bottomNavigationView: BottomNavigationView? = null
+    private val viewModel by lazy { ViewModelProvider(this)[SleepViewModel::class.java] }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         val intent = Intent(activity, SleepActivity::class.java)
@@ -42,32 +44,14 @@ class SleepFragment : Fragment() {
         bottomNavigationView?.setBackgroundColor(
             ContextCompat.getColor(requireContext(), R.color.sleep_background)
         )
-        val categories: RecyclerView = binding.sleepCategories
-        categories.setHasFixedSize(true)
-        categories.apply {
-            layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
-            adapter = CategoriesAdapter("night")
-        }
-        categories.addItemDecoration(
-            CategoriesItemDecoration(
-                resources.getDimension(
-                    R.dimen.text_margin
-                ).toInt()
-            )
-        )
+        setupCategories()
 
         val nextIntent = Intent(context, PlayOptionActivity::class.java)
         val cards: RecyclerView = binding.sleepMusicCards
         cards.setHasFixedSize(true)
-        val sleepCards = listOf(
-            SleepCard(R.drawable.night_island_background, R.string.night_island, nextIntent),
-            SleepCard(R.drawable.sweet_sleep_background, R.string.sweet_sleep, nextIntent),
-            SleepCard(R.drawable.good_night_background, R.string.good_night, nextIntent),
-            SleepCard(R.drawable.moon_clouds_background, R.string.moon_clouds, nextIntent)
-        )
         cards.apply {
             layoutManager = GridLayoutManager(context, 2, GridLayoutManager.VERTICAL, false)
-            adapter = SleepCardsAdapter(context, sleepCards)
+            adapter = SleepCardsAdapter(context, viewModel.getCards(nextIntent))
         }
         cards.addItemDecoration(
             SleepSpaceDecoration(
@@ -85,6 +69,22 @@ class SleepFragment : Fragment() {
             startActivity(musicIntent)
         }
         return root
+    }
+
+    private fun setupCategories() {
+        val categories: RecyclerView = binding.sleepCategories
+        categories.setHasFixedSize(true)
+        categories.apply {
+            layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+            adapter = CategoriesAdapter(context.getString(R.string.sleep))
+        }
+        categories.addItemDecoration(
+            CategoriesItemDecoration(
+                resources.getDimension(
+                    R.dimen.text_margin
+                ).toInt()
+            )
+        )
     }
 
     override fun onDestroyView() {

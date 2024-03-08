@@ -1,4 +1,4 @@
-package com.example.silentmoon.ui.meditate
+package com.example.silentmoon.ui.utils
 
 data class Category(
     val icon: Int,

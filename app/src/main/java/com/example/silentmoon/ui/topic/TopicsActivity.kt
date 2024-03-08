@@ -34,15 +34,18 @@ class TopicsActivity : AppCompatActivity() {
         binding.topicsRecycler.apply {
             setHasFixedSize(true)
             layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
-            adapter = TopicCardsAdapter(context, intent).apply {
-                submitList(viewModel.topics)
-            }
+            adapter = TopicCardsAdapter(context, intent, viewModel.topics)
         }
         val topicsTitle = getString(R.string.topics_title)
         val endOfBoldText = topicsTitle.indexOf("\n")
         if (endOfBoldText != -1) {
             val spannableString = SpannableString(topicsTitle).apply {
-                setSpan(StyleSpan(Typeface.BOLD), 0, endOfBoldText, Spannable.SPAN_INCLUSIVE_INCLUSIVE)
+                setSpan(
+                    StyleSpan(Typeface.BOLD),
+                    0,
+                    endOfBoldText,
+                    Spannable.SPAN_INCLUSIVE_INCLUSIVE
+                )
             }
             binding.topicsTitle.text = spannableString
         }

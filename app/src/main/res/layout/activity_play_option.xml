@@ -51,7 +51,7 @@
                     android:layout_gravity="end"
                     android:layout_marginBottom="@dimen/margin_10dp"
                     android:contentDescription="@string/download_icon"
-                    app:srcCompat="@drawable/download_icon" />
+                    app:srcCompat="@drawable/download_sleep_icon" />
 
                 <ImageView
                     android:id="@+id/favorites_icon"
