@@ -28,7 +28,6 @@
     <dimen name="text_input_height">64dp</dimen>
     <dimen name="card_course_right_margin">7dp</dimen>
 
-
     <dimen name="title_font_size">30sp</dimen>
     <dimen name="smaller_title_font_size">28sp</dimen>
     <dimen name="subtitle_font_size">16sp</dimen>
