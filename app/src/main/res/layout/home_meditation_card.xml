@@ -17,7 +17,7 @@
 
     <TextView
         android:id="@+id/meditation_card_title"
-        style="@style/card_title"
+        style="@style/meditation_card_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_10dp"
@@ -37,7 +37,7 @@
 
         <TextView
             android:id="@+id/meditation_card_subtitle"
-            style="@style/card_subtitle"
+            style="@style/meditation_card_subtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/margin_5dp"
@@ -45,7 +45,7 @@
 
         <TextView
             android:id="@+id/meditation_card_subtitle_1"
-            style="@style/card_subtitle"
+            style="@style/meditation_card_subtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/margin_5dp"
@@ -53,7 +53,7 @@
 
         <TextView
             android:id="@+id/meditation_card_subtitle_2"
-            style="@style/card_subtitle"
+            style="@style/meditation_card_subtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="@string/duration" />

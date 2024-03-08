@@ -175,7 +175,7 @@
 
     <string name="get_started">Get Started</string>
 
-    <string name="welcome_title">Hi %s, Welcome\n to Silent Moon</string>
+    <string name="welcome_title">Hi %s, Welcome\nto Silent Moon</string>
     <string name="welcome_subtitle">Explore the app, find some peace of mind to prepare for meditation.</string>
     <string name="have_read">I have read the</string>
     <string name="welcome_screen_background">welcome screen background</string>
@@ -207,7 +207,7 @@
     <string name="better_sleep">Better Sleep</string>
     <string name="reduce_pain">Reduce Pain</string>
     <string name="improve_focus">Improve\nFocus</string>
-    <string name="home_title">Good Morning, {}</string>
+    <string name="home_title">Good Morning, %s</string>
     <string name="home_subtitle">We wish you have a good day</string>
     <string name="recommended_for_you">Recommended for you</string>
     <string name="meditation">Meditation</string>
@@ -220,6 +220,7 @@
     <string name="course">Course</string>
     <string name="music">Music</string>
     <string name="duration">3–10 MIN</string>
+    <string name="duration_45">45 MIN</string>
     <string name="happiness">Happiness</string>
     <string name="focus">Focus</string>
     <string name="course_background">this is background image for course card</string>
@@ -232,7 +233,7 @@
     <string name="course_desc">Easy to mind into a restful night\'s sleep with these deep, ambient tones</string>
     <string name="favorites">"24.234 Favorites"</string>
     <string name="listening">34.234 Listening</string>
-    <string name="pick_narrator">Pick a narrator</string>
+    <string name="pick_narrator">Pick a Narrator</string>
     <string name="male_voice">male voice</string>
     <string name="female_voice">female voice</string>
     <string name="toolbar_image">Tool bar image</string>
@@ -247,7 +248,7 @@
     <string name="duration_5">5 MIN</string>
     <string name="duration_3">3 MIN</string>
     <string name="music_background_imageview">Music Background ImageView</string>
-    <string name="seven_days_of_calm">7 days of calm</string>
+    <string name="seven_days_of_calm">7 Days of Calm</string>
     <string name="empty" />
     <string name="time_start">00:00</string>
     <string name="time_end">45:00</string>
@@ -269,7 +270,7 @@
     <string name="daily_calm">Daily Calm</string>
     <string name="daily_calm_subtitle">apr 30</string>
     <string name="pause_practice">Pause Practice</string>
-    <string name="sleep_subtitle">Something bedtime stories to help you fall into a deep and natural sleep</string>
+    <string name="sleep_subtitle">Something bedtime stories to help you fall\n into a deep and natural sleep</string>
     <string name="sleep_title">Sleep Stories</string>
     <string name="sleep_screen_background">Sleep Screen Background</string>
     <string name="night_island">Night Island</string>
@@ -279,7 +280,7 @@
     <string name="sleep_music">Sleep Music</string>
     <string name="sleep_big_card_background">Sleep big card background</string>
     <string name="ocean_moon">The Ocean Moon</string>
-    <string name="ocean_moon_desc">Non-stop 8-hour mixes of our most popular sleep audio</string>
+    <string name="ocean_moon_desc">Non-stop 8-hour mixes of our\nmost popular sleep audio</string>
     <string name="sleep_duration">45 MIN</string>
     <string name="welcome_sleep">Welcome to Sleep</string>
     <string name="welcome_sleep_desc">Explore the new king of sleep. It uses sound and visualisation to create perfect conditions for refreshing sleep.</string>

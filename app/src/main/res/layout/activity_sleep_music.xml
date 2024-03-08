@@ -23,7 +23,7 @@
             android:paddingEnd="@dimen/margin_20dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:navigationIcon="@drawable/ic_back"
+            app:navigationIcon="@drawable/back_icon"
             app:title="@string/sleep_music"
             app:titleCentered="true"
             app:titleTextAppearance="@style/small_title"

@@ -17,7 +17,7 @@
         android:scaleType="fitXY"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/music_bg" />
+        app:srcCompat="@drawable/music_background" />
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/music_toolbar"
@@ -28,7 +28,7 @@
         android:paddingEnd="@dimen/text_margin"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:navigationIcon="@drawable/ic_close">
+        app:navigationIcon="@drawable/close_icon">
 
         <ImageView
             android:id="@+id/music_download"
@@ -36,7 +36,7 @@
             android:layout_height="match_parent"
             android:layout_gravity="end"
             android:contentDescription="@string/download_icon"
-            app:srcCompat="@drawable/ic_download" />
+            app:srcCompat="@drawable/download_icon" />
 
         <ImageView
             android:id="@+id/music_favorites"
@@ -45,7 +45,7 @@
             android:layout_gravity="end"
             android:layout_marginEnd="@dimen/text_margin"
             android:contentDescription="@string/favorites_icon"
-            app:srcCompat="@drawable/ic_like" />
+            app:srcCompat="@drawable/favorite_light_icon" />
 
     </com.google.android.material.appbar.MaterialToolbar>
 
@@ -85,7 +85,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_70dp"
-        android:background="@drawable/btn_play_toggle_bg"
+        android:background="@drawable/play_toggle_btn_with_bg"
         android:textOff="@string/empty"
         android:textOn="@string/empty"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -98,7 +98,7 @@
         android:layout_width="@dimen/margin_40dp"
         android:layout_height="@dimen/margin_40dp"
         android:contentDescription="@string/minus_15_second_icon"
-        android:src="@drawable/ic_backward"
+        android:src="@drawable/minus_15_icon"
         app:layout_constraintBottom_toBottomOf="@id/music_play_btn"
         app:layout_constraintEnd_toStartOf="@+id/music_play_btn"
         app:layout_constraintStart_toStartOf="parent"
@@ -109,7 +109,7 @@
         android:layout_width="@dimen/margin_40dp"
         android:layout_height="@dimen/margin_40dp"
         android:contentDescription="@string/plus_15_seconds_icon"
-        android:src="@drawable/ic_forward"
+        android:src="@drawable/plus_15_icon"
         app:layout_constraintBottom_toBottomOf="@id/music_play_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/music_play_btn"

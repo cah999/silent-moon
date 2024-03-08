@@ -10,19 +10,19 @@
         style="@style/background_img"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10dp"
         android:contentDescription="@string/home_big_card_background"
-        android:layout_marginTop="@dimen/margin_20dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:background="@drawable/daily_thought_meditation" />
+        tools:background="@drawable/daily_thought_background" />
 
     <ToggleButton
         android:id="@+id/play_btn"
         android:layout_width="@dimen/play_button_size"
         android:layout_height="@dimen/play_button_size"
         android:layout_marginEnd="@dimen/margin_20dp"
-        android:background="@drawable/ic_night_play"
+        android:background="@drawable/play_sleep_icon"
         android:textOff=""
         android:textOn=""
         app:layout_constraintBottom_toBottomOf="@id/big_card_background"
@@ -31,7 +31,7 @@
 
     <TextView
         android:id="@+id/big_card_title"
-        style="@style/card_title"
+        style="@style/meditation_card_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/top_margin"
@@ -50,6 +50,7 @@
         android:id="@+id/big_card_linear_layout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="@id/big_card_background"
         app:layout_constraintEnd_toEndOf="@+id/big_card_title"
@@ -59,7 +60,7 @@
 
         <TextView
             android:id="@+id/big_card_subtitle"
-            style="@style/card_subtitle"
+            style="@style/meditation_card_subtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/margin_5dp"
@@ -68,7 +69,7 @@
 
         <TextView
             android:id="@+id/big_card_subtitle_1"
-            style="@style/card_subtitle"
+            style="@style/meditation_card_subtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/margin_5dp"
@@ -77,7 +78,7 @@
 
         <TextView
             android:id="@+id/big_card_subtitle_2"
-            style="@style/card_subtitle"
+            style="@style/meditation_card_subtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"

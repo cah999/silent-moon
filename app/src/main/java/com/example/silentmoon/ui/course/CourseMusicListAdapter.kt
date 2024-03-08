@@ -8,7 +8,7 @@ import android.widget.TextView
 import android.widget.ToggleButton
 import androidx.recyclerview.widget.RecyclerView
 import com.example.silentmoon.R
-import com.example.silentmoon.databinding.CourseMusicBinding
+import com.example.silentmoon.databinding.CourseMusicItemBinding
 
 class CourseMusicListAdapter(
     private val context: Context,
@@ -17,7 +17,7 @@ class CourseMusicListAdapter(
 ) :
     RecyclerView.Adapter<CourseMusicListAdapter.ViewHolder>() {
 
-    inner class ViewHolder(binding: CourseMusicBinding) : RecyclerView.ViewHolder(binding.root) {
+    inner class ViewHolder(binding: CourseMusicItemBinding) : RecyclerView.ViewHolder(binding.root) {
         var playBtn: ToggleButton = binding.playMusicBtn
         var title: TextView = binding.musicTitle
         var duration: TextView = binding.musicDuration
@@ -30,7 +30,7 @@ class CourseMusicListAdapter(
     }
 
     override fun onCreateViewHolder(group: ViewGroup, position: Int): ViewHolder {
-        val binding = CourseMusicBinding.inflate(LayoutInflater.from(group.context), group, false)
+        val binding = CourseMusicItemBinding.inflate(LayoutInflater.from(group.context), group, false)
         return ViewHolder(binding)
     }
 

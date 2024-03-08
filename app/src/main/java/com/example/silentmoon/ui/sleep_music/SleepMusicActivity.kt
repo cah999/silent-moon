@@ -21,14 +21,14 @@ class SleepMusicActivity : AppCompatActivity() {
         setContentView(binding.root)
         val intent = Intent(this, SleepMusicPlayer::class.java)
         val cards = listOf(
-            SleepCard(R.drawable.night_island, R.string.night_island, intent),
-            SleepCard(R.drawable.sweet_sleep, R.string.sweet_sleep, intent),
-            SleepCard(R.drawable.good_night, R.string.good_night, intent),
-            SleepCard(R.drawable.moon_clouds, R.string.moon_clouds, intent),
-            SleepCard(R.drawable.sweet_sleep, R.string.sweet_sleep, intent),
-            SleepCard(R.drawable.night_island, R.string.night_island, intent),
-            SleepCard(R.drawable.moon_clouds, R.string.moon_clouds, intent),
-            SleepCard(R.drawable.good_night, R.string.good_night, intent)
+            SleepCard(R.drawable.night_island_background, R.string.night_island, intent),
+            SleepCard(R.drawable.sweet_sleep_background, R.string.sweet_sleep, intent),
+            SleepCard(R.drawable.good_night_background, R.string.good_night, intent),
+            SleepCard(R.drawable.moon_clouds_background, R.string.moon_clouds, intent),
+            SleepCard(R.drawable.sweet_sleep_background, R.string.sweet_sleep, intent),
+            SleepCard(R.drawable.night_island_background, R.string.night_island, intent),
+            SleepCard(R.drawable.moon_clouds_background, R.string.moon_clouds, intent),
+            SleepCard(R.drawable.good_night_background, R.string.good_night, intent)
         )
         val recommendations: RecyclerView = binding.sleepMusicCards
         recommendations.setHasFixedSize(true)

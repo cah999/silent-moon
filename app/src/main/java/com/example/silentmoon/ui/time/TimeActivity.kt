@@ -13,16 +13,17 @@ class TimeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityTimeBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        val intent = Intent(this, HomeActivity::class.java)
+//        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
 
         binding.saveBtn.setOnClickListener {
-            val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
 //            Log.d("SELECTED TIME", binding.timePicker.getSelectedTime().toString())
         }
 
         binding.noThanksText.setOnClickListener {
-            val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
         }
+
     }
 }

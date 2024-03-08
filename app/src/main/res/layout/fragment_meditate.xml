@@ -29,7 +29,7 @@
             style="@style/subtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/margin_10dp"
+            android:layout_marginHorizontal="@dimen/margin_20dp"
             android:layout_marginTop="@dimen/text_margin"
             android:text="@string/meditate_subtitle"
             app:layout_constrainedWidth="true"
@@ -51,11 +51,12 @@
             tools:listitem="@layout/meditate_category" />
 
         <include
-            android:id="@+id/bigCard"
+            android:id="@+id/meditate_big_card"
             layout="@layout/home_big_card"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/margin_10dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/text_margin"
+            android:layout_marginTop="@dimen/margin_10dp"
             app:layout_constraintTop_toBottomOf="@id/meditate_categories" />
 
         <androidx.recyclerview.widget.RecyclerView
@@ -66,8 +67,9 @@
             android:layout_marginTop="@dimen/margin_20dp"
             app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.526"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/bigCard"
+            app:layout_constraintTop_toBottomOf="@+id/meditate_big_card"
             app:spanCount="2"
             tools:listitem="@layout/meditate_card" />
 

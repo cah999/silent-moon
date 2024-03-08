@@ -5,66 +5,51 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.PagerSnapHelper
 import com.example.silentmoon.R
 import com.example.silentmoon.databinding.FragmentHomeBinding
 import com.example.silentmoon.ui.course.CourseActivity
+import com.example.silentmoon.ui.meditate.CategoriesItemDecoration
 
-
-data class HomeMeditation(
-    val image: Int, val title: Int, val duration: Int
-)
 
 class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
 
-    private val courseIntent by lazy { Intent(context, CourseActivity::class.java) }
-    private val meditationData = listOf(
-        HomeMeditation(R.drawable.focus_meditation, R.string.focus, R.string.duration),
-        HomeMeditation(
-            R.drawable.happiness_meditation, R.string.happiness, R.string.duration
-        ),
-    )
-    private val courseData = listOf(
-        HomeCourse(
-            R.drawable.basics_course,
-            R.string.basics,
-            R.string.course,
-            R.string.duration,
-            R.string.light
-        ), HomeCourse(
-            R.drawable.relaxation_music,
-            R.string.relaxation,
-            R.string.music,
-            R.string.duration,
-            R.string.dark
-        ), HomeCourse(
-            R.drawable.daily_thought_meditation,
-            R.string.daily_thought,
-            R.string.meditation,
-            R.string.duration,
-            R.string.light
-        )
-    )
-//    private val courseData = emptyList<HomeCourse>()
-//    private val meditationData = emptyList<HomeMeditation>()
+    private val viewModel by lazy { ViewModelProvider(this)[HomeViewModel::class.java] }
+    private val nextIntent by lazy { Intent(context, CourseActivity::class.java) }
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
 
-        setupCourseRecyclerView()
-        setupRecommendationsRecyclerView()
+        val sharedPreferences = requireActivity().getSharedPreferences(
+            getString(R.string.mysharedpref),
+            AppCompatActivity.MODE_PRIVATE
+        )
+        var name = sharedPreferences.getString(
+            getString(R.string.name),
+            getString(R.string.default_nickname)
+        )
+        if (name != null) {
+            if (name.isEmpty()) {
+                name = getString(R.string.default_nickname)
+            }
+        }
+        binding.homeTitle.text = binding.homeTitle.text.toString().format(name)
+        setupCourseRecycler()
+        setupMeditationRecycler()
 
         return binding.root
     }
 
-    private fun setupCourseRecyclerView() {
+    private fun setupCourseRecycler() {
         val layoutManager = GridLayoutManager(context, 2)
         layoutManager.spanSizeLookup = object : GridLayoutManager.SpanSizeLookup() {
             override fun getSpanSize(position: Int): Int {
@@ -77,25 +62,18 @@ class HomeFragment : Fragment() {
         binding.homeRecycler.apply {
             setHasFixedSize(true)
             this.layoutManager = layoutManager
-            adapter = HomeCourseAdapter(context, courseData, courseIntent)
-            addItemDecoration(SpaceItemDecoration(resources.getDimensionPixelSize(R.dimen.margin_10dp)))
+            adapter = HomeCourseAdapter(context, viewModel.courseData, nextIntent)
+            addItemDecoration(SpaceItemDecoration(resources.getDimensionPixelSize(R.dimen.margin_5dp)))
         }
     }
 
-    private fun setupRecommendationsRecyclerView() {
+    private fun setupMeditationRecycler() {
         binding.homeMeditationRecommendations.apply {
             setHasFixedSize(true)
             layoutManager = GridLayoutManager(context, 1, GridLayoutManager.HORIZONTAL, false)
-            adapter = HomeMeditationAdapter(context, meditationData, courseIntent)
-            addItemDecoration(SpaceItemDecoration(resources.getDimensionPixelSize(R.dimen.margin_20dp)))
+            adapter = HomeMeditationAdapter(context, viewModel.meditationData, nextIntent)
+            addItemDecoration(CategoriesItemDecoration(resources.getDimensionPixelSize(R.dimen.margin_10dp)))
         }
-        PagerSnapHelper().attachToRecyclerView(binding.homeMeditationRecommendations)
-    }
-
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
     }
 }
 

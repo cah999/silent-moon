@@ -16,7 +16,7 @@
         android:contentDescription="@string/sleep_screen_background"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/welcome_sleep_bg" />
+        app:srcCompat="@drawable/welcome_sleep_background" />
 
     <TextView
         android:id="@+id/sleep_welcome_title"

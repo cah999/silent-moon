@@ -15,7 +15,7 @@
         android:layout_marginTop="@dimen/margin_64dp"
         android:adjustViewBounds="true"
         android:contentDescription="@string/profile_picture"
-        android:src="@drawable/woman"
+        android:src="@drawable/profile_man"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -47,14 +47,15 @@
         app:layout_constraintTop_toBottomOf="@+id/profile_nickname" />
 
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/logout_btn"
-        style="@style/main_button"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/margin_40dp"
         android:layout_marginBottom="@dimen/margin_20dp"
         android:text="@string/logout"
+        android:textColor="@color/accent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

@@ -17,7 +17,7 @@
         android:scaleType="fitXY"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/night_music_bg" />
+        app:srcCompat="@drawable/night_music_background" />
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/sleep_sleep_music_toolbar"
@@ -28,7 +28,7 @@
         android:paddingEnd="@dimen/text_margin"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:navigationIcon="@drawable/ic_close">
+        app:navigationIcon="@drawable/close_sleep_icon">
 
         <ImageView
             android:id="@+id/sleep_music_download"
@@ -36,7 +36,7 @@
             android:layout_height="match_parent"
             android:layout_gravity="end"
             android:contentDescription="@string/download_icon"
-            app:srcCompat="@drawable/ic_night_download" />
+            app:srcCompat="@drawable/download_sleep_icon" />
 
         <ImageView
             android:id="@+id/sleep_music_favorites"
@@ -45,7 +45,7 @@
             android:layout_gravity="end"
             android:layout_marginEnd="@dimen/text_margin"
             android:contentDescription="@string/favorites_icon"
-            app:srcCompat="@drawable/ic_night_like" />
+            app:srcCompat="@drawable/favorites_sleep_icon" />
 
     </com.google.android.material.appbar.MaterialToolbar>
 
@@ -86,7 +86,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_70dp"
-        android:background="@drawable/btn_play_night_toggle"
+        android:background="@drawable/play_sleep_toggle_btn"
         android:textOff="@string/empty"
         android:textOn="@string/empty"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -99,22 +99,24 @@
         android:layout_width="@dimen/margin_40dp"
         android:layout_height="@dimen/margin_40dp"
         android:contentDescription="@string/minus_15_second_icon"
-        android:src="@drawable/ic_night_backward"
+        android:src="@drawable/minus_15_icon"
         app:layout_constraintBottom_toBottomOf="@id/sleep_music_play_btn"
         app:layout_constraintEnd_toStartOf="@+id/sleep_music_play_btn"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/sleep_music_play_btn" />
+        app:layout_constraintTop_toTopOf="@+id/sleep_music_play_btn"
+        app:tint="@color/sleep_text_color" />
 
     <ImageView
         android:id="@+id/plus_15_second_btn"
         android:layout_width="@dimen/margin_40dp"
         android:layout_height="@dimen/margin_40dp"
         android:contentDescription="@string/plus_15_seconds_icon"
-        android:src="@drawable/ic_night_forward"
+        android:src="@drawable/plus_15_icon"
         app:layout_constraintBottom_toBottomOf="@id/sleep_music_play_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/sleep_music_play_btn"
-        app:layout_constraintTop_toTopOf="@+id/sleep_music_play_btn" />
+        app:layout_constraintTop_toTopOf="@+id/sleep_music_play_btn"
+        app:tint="@color/sleep_text_color" />
 
     <com.google.android.material.slider.Slider
         android:id="@+id/sleep_music_slider"
@@ -131,7 +133,7 @@
         app:thumbColor="@color/accent"
         app:thumbElevation="@dimen/music_line_point"
         app:thumbRadius="@dimen/music_line_point"
-        app:trackColorActive="@color/dark_gray"
+        app:trackColorActive="@color/sleep_music_line_active"
         app:trackColorInactive="@color/sleep_music_line_not_active"
         app:trackHeight="@dimen/music_line_height" />
 

@@ -144,6 +144,7 @@ class TimePickerView @JvmOverloads constructor(
                         textSize,
                         textColor,
                         textSideColor,
+                        it.tag as Int,
                         it.tag != 2
                     )
                     scrollToPosition(it)
@@ -264,6 +265,7 @@ class TimePickerView @JvmOverloads constructor(
         val timeTextSize: Float,
         val textColor: Int,
         val textSelectColor: Int,
+        val tag: Int,
         val isEndlessScroll: Boolean = true
     ) : RecyclerView.Adapter<ViewHolder>() {
 
@@ -297,7 +299,10 @@ class TimePickerView @JvmOverloads constructor(
             val value = position % (endNum - fromNum + 1) + fromNum
             textView.text =
                 if (isEndlessScroll) {
-                    value.toString()
+                    if (tag == 1) {
+                        value.toString().padStart(2, '0')
+                    } else
+                        value.toString()
                 } else {
                     if (value == 1) "AM" else "PM"
                 }

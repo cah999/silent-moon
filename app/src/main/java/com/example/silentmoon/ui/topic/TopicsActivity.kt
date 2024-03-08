@@ -23,7 +23,7 @@ class TopicsActivity : AppCompatActivity() {
         binding = ActivityTopicsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        viewModel = ViewModelProvider(this).get(TopicsViewModel::class.java)
+        viewModel = ViewModelProvider(this)[TopicsViewModel::class.java]
 
         binding.topicsSubtitle.setOnClickListener {
             startActivity(Intent(this, TimeActivity::class.java))

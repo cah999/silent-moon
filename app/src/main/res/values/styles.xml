@@ -74,6 +74,10 @@
         <item name="android:textColor">@color/accent</item>
     </style>
 
+    <style name="upper_text_play_option" parent="upper_text">
+        <item name="fontFamily">@font/helvetica_neue_medium</item>
+    </style>
+
     <style name="sign_in_title">
         <item name="android:textSize">@dimen/smaller_title_font_size</item>
         <item name="android:textColor">@color/dark_gray</item>
@@ -124,12 +128,24 @@
         <item name="android:textSize">@dimen/card_title</item>
         <item name="android:textStyle">bold</item>
         <item name="android:lineSpacingExtra">@dimen/margin_10dp</item>
+        <item name="fontFamily">@font/helvetica_neue_medium</item>
     </style>
 
     <style name="card_subtitle">
         <item name="android:textSize">@dimen/card_subtitle</item>
-        <item name="fontFamily">sans-serif-medium</item>
         <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/helvetica_neue_medium</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+
+    <style name="meditation_card_title" parent="card_title">
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:textColor">@color/dark_gray</item>
+    </style>
+
+    <style name="meditation_card_subtitle" parent="card_subtitle">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textColor">@color/gray</item>
     </style>
 
 
@@ -140,7 +156,7 @@
         <item name="android:paddingHorizontal">@dimen/margin_10dp</item>
         <item name="android:paddingVertical">@dimen/margin_10dp</item>
         <item name="android:textSize">@dimen/card_button_text_size</item>
-        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">@font/helvetica_neue_medium</item>
     </style>
 
     <style name="time">
@@ -156,5 +172,9 @@
     <style name="input_text">
         <item name="android:font">@font/helvetica_neue_light</item>
         <item name="android:textColorHint">@color/gray</item>
+    </style>
+
+    <style name="bottom_bar">
+        <item name="fontFamily">@font/roboto_medium</item>
     </style>
 </resources>

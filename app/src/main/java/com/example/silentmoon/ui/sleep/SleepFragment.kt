@@ -10,11 +10,12 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.silentmoon.ui.play_option.PlayOptionActivity
 import com.example.silentmoon.R
-import com.example.silentmoon.ui.sleep_music.SleepMusicActivity
 import com.example.silentmoon.databinding.FragmentSleepBinding
 import com.example.silentmoon.ui.meditate.CategoriesAdapter
+import com.example.silentmoon.ui.meditate.CategoriesItemDecoration
+import com.example.silentmoon.ui.play_option.PlayOptionActivity
+import com.example.silentmoon.ui.sleep_music.SleepMusicActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class SleepFragment : Fragment() {
@@ -47,15 +48,22 @@ class SleepFragment : Fragment() {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
             adapter = CategoriesAdapter("night")
         }
+        categories.addItemDecoration(
+            CategoriesItemDecoration(
+                resources.getDimension(
+                    R.dimen.text_margin
+                ).toInt()
+            )
+        )
 
         val nextIntent = Intent(context, PlayOptionActivity::class.java)
         val cards: RecyclerView = binding.sleepMusicCards
         cards.setHasFixedSize(true)
         val sleepCards = listOf(
-            SleepCard(R.drawable.night_island, R.string.night_island, nextIntent),
-            SleepCard(R.drawable.sweet_sleep, R.string.sweet_sleep, nextIntent),
-            SleepCard(R.drawable.good_night, R.string.good_night, nextIntent),
-            SleepCard(R.drawable.moon_clouds, R.string.moon_clouds, nextIntent)
+            SleepCard(R.drawable.night_island_background, R.string.night_island, nextIntent),
+            SleepCard(R.drawable.sweet_sleep_background, R.string.sweet_sleep, nextIntent),
+            SleepCard(R.drawable.good_night_background, R.string.good_night, nextIntent),
+            SleepCard(R.drawable.moon_clouds_background, R.string.moon_clouds, nextIntent)
         )
         cards.apply {
             layoutManager = GridLayoutManager(context, 2, GridLayoutManager.VERTICAL, false)

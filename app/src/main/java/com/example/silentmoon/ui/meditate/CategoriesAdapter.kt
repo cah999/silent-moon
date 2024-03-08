@@ -13,11 +13,11 @@ import com.example.silentmoon.databinding.MeditateCategoryBinding
 class CategoriesAdapter(private val theme: String) :
     RecyclerView.Adapter<CategoriesAdapter.ViewHolder>() {
     private val categories = listOf(
-        Category(R.drawable.ic_all, R.string.all),
-        Category(R.drawable.ic_my, R.string.my),
-        Category(R.drawable.ic_anxious, R.string.anxious),
-        Category(R.drawable.ic_sleep, R.string.sleep),
-        Category(R.drawable.ic_kids, R.string.kids)
+        Category(R.drawable.catrgory_all_icon, R.string.all),
+        Category(R.drawable.catrgory_my_icon, R.string.my),
+        Category(R.drawable.catrgory_anxious_icon, R.string.anxious),
+        Category(R.drawable.catrgory_sleep_icon, R.string.sleep),
+        Category(R.drawable.category_kids_icon, R.string.kids)
     )
 
     inner class ViewHolder(binding: MeditateCategoryBinding) :
@@ -45,7 +45,7 @@ class CategoriesAdapter(private val theme: String) :
             if (isLightTheme) R.color.bottom_nav_selected_color else R.color.sleep_grey
 
         holder.background.apply {
-            setBackgroundResource(if (isLightTheme) R.drawable.filter_toggle_bg else R.drawable.filter_night_toggle_bg)
+            setBackgroundResource(if (isLightTheme) R.drawable.category_toggle_background else R.drawable.category_sleep_toggle_background)
             setTextColor(
                 ContextCompat.getColor(
                     context,

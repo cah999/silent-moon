@@ -25,8 +25,8 @@ class PlayOptionActivity : AppCompatActivity() {
         val recommendations: RecyclerView = binding.relatedCards
         recommendations.setHasFixedSize(true)
         val cards = listOf(
-            SleepCard(R.drawable.moon_clouds, R.string.moon_clouds, recyclerIntent),
-            SleepCard(R.drawable.sweet_sleep, R.string.sweet_sleep, recyclerIntent)
+            SleepCard(R.drawable.good_night_background, R.string.moon_clouds, recyclerIntent),
+            SleepCard(R.drawable.sweet_sleep_background, R.string.sweet_sleep, recyclerIntent)
         )
         recommendations.apply {
             layoutManager = GridLayoutManager(context, 2, GridLayoutManager.VERTICAL, false)
@@ -42,9 +42,13 @@ class PlayOptionActivity : AppCompatActivity() {
             finish()
         }
 
-        binding.playButton.setOnClickListener {
+        binding.sleepPlayBtn.setOnClickListener {
             val playIntent = Intent(this, SleepMusicPlayer::class.java)
             startActivity(playIntent)
+        }
+
+        binding.playToolbar.setNavigationOnClickListener {
+            finish()
         }
     }
 }

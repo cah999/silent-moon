@@ -16,6 +16,6 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:itemCount="3"
-        tools:listitem="@layout/course_music" />
+        tools:listitem="@layout/course_music_item" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

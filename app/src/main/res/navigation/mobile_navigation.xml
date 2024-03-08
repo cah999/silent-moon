@@ -5,6 +5,15 @@
     android:id="@+id/mobile_navigation"
     app:startDestination="@+id/navigation_home">
 
+    <activity
+        android:id="@+id/navigation_home_activity"
+        android:name="com.example.silentmoon.ui.home.HomeActivity"
+        android:label="@string/title_home"
+        app:destination="@id/navigation_home"
+        app:popUpTo="@id/navigation_home"
+        app:popUpToInclusive="true"
+        tools:layout="@layout/activity_home" />
+
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.example.silentmoon.ui.home.HomeFragment"
@@ -27,6 +36,9 @@
         android:id="@+id/navigation_music"
         android:name="com.example.silentmoon.ui.music.MusicActivity"
         android:label="@string/title_music"
+        app:destination="@id/navigation_music"
+        app:popUpTo="@id/navigation_home"
+        app:popUpToInclusive="true"
         tools:layout="@layout/activity_music" />
 
     <fragment

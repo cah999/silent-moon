@@ -25,7 +25,7 @@ class SleepCardsAdapter(
         init {
             binding.meditationCardSubtitle1.text = context.getString(R.string.marker)
             binding.meditationCardSubtitle1.setTextColor(
-                ContextCompat.getColor(context, R.color.sleep_text_color)
+                ContextCompat.getColor(context, R.color.sleep_grey)
             )
             itemView.setOnClickListener {
                 context.startActivity(cards[adapterPosition].intent)
@@ -45,8 +45,8 @@ class SleepCardsAdapter(
         holder.title.setText(card.title)
         holder.subtitle.setText(R.string.sleep_music)
         holder.title.setTextColor(ContextCompat.getColor(context, R.color.sleep_text_color))
-        holder.subtitle.setTextColor(ContextCompat.getColor(context, R.color.dark_gray))
-        holder.duration.setTextColor(ContextCompat.getColor(context, R.color.dark_gray))
+        holder.subtitle.setTextColor(ContextCompat.getColor(context, R.color.sleep_grey))
+        holder.duration.setTextColor(ContextCompat.getColor(context, R.color.sleep_grey))
         holder.duration.setText(R.string.sleep_duration)
 
         val layoutParams = holder.itemView.layoutParams

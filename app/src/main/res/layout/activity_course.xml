@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:fitsSystemWindows="true"
     tools:context=".ui.course.CourseActivity">
 
@@ -16,7 +16,7 @@
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed">
 
             <ImageView
                 android:id="@+id/toolbar_background"
@@ -25,7 +25,7 @@
                 android:layout_height="match_parent"
                 android:contentDescription="@string/toolbar_image"
                 app:layout_collapseMode="parallax"
-                app:srcCompat="@drawable/course_toolbar_image" />
+                app:srcCompat="@drawable/course_top_image" />
 
             <com.google.android.material.appbar.MaterialToolbar
                 android:id="@+id/course_toolbar"
@@ -46,7 +46,7 @@
                     android:layout_gravity="end"
                     android:layout_marginBottom="@dimen/margin_10dp"
                     android:contentDescription="@string/download_icon"
-                    app:srcCompat="@drawable/download_icon" />
+                    app:srcCompat="@drawable/download_sleep_icon" />
 
                 <ImageView
                     android:id="@+id/favorites_icon"
@@ -56,7 +56,7 @@
                     android:layout_marginEnd="@dimen/margin_10dp"
                     android:layout_marginBottom="@dimen/margin_10dp"
                     android:contentDescription="@string/favorites_icon"
-                    app:srcCompat="@drawable/favorites_icon" />
+                    app:srcCompat="@drawable/favorites_sleep_icon" />
 
             </com.google.android.material.appbar.MaterialToolbar>
 
@@ -65,7 +65,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_scrollFlags="scroll|snap">
+            app:layout_scrollFlags="scroll|enterAlways">
 
 
             <TextView
@@ -73,9 +73,8 @@
                 style="@style/title"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/margin_20dp"
+                android:layout_marginHorizontal="@dimen/margin_20dp"
                 android:layout_marginTop="@dimen/text_margin"
-                android:layout_marginEnd="@dimen/margin_20dp"
                 android:text="@string/happy_morning"
                 android:textAlignment="textStart"
                 android:textSize="@dimen/big_title_size"
@@ -100,7 +99,7 @@
                 style="@style/subtitle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp"
                 android:text="@string/course_desc"
                 android:textAlignment="textStart"
                 app:layout_constraintEnd_toEndOf="@id/course_type_text"
@@ -130,8 +129,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/margin_5dp"
-                android:layout_marginEnd="@dimen/margin_20dp"
                 android:layout_marginTop="@dimen/bigger_top_margin"
+                android:layout_marginEnd="@dimen/margin_20dp"
                 android:drawablePadding="@dimen/margin_10dp"
                 android:text="@string/listening"
                 android:textAlignment="textStart"
@@ -151,7 +150,6 @@
                 android:text="@string/pick_narrator"
                 android:textColor="@color/dark_gray"
                 android:textSize="@dimen/bigger_subtitle_font_size"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@id/course_subtitle"
                 app:layout_constraintStart_toStartOf="@id/course_subtitle"
                 app:layout_constraintTop_toBottomOf="@id/favorites_count_text" />
@@ -163,6 +161,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/top_margin"
+            android:fillViewport="true"
             app:tabIndicatorColor="@color/accent"
             app:tabIndicatorFullWidth="false"
             app:tabIndicatorHeight="2dp"

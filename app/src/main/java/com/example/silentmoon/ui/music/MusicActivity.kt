@@ -34,14 +34,17 @@ class MusicActivity : AppCompatActivity() {
         }
 
         binding.plus15SecondBtn.setOnClickListener {
-            currentTimeInSeconds += 15
-            updateSliderAndTime()
+            if (currentTimeInSeconds < 2700) {
+                currentTimeInSeconds += 15
+                updateSliderAndTime()
+            }
         }
 
         binding.minus15SecondsBtn.setOnClickListener {
-            currentTimeInSeconds -= 15
-            if (currentTimeInSeconds < 0) currentTimeInSeconds = 0
-            updateSliderAndTime()
+            if (currentTimeInSeconds > 0) {
+                currentTimeInSeconds -= 15
+                updateSliderAndTime()
+            }
         }
 
         binding.musicPlayBtn.setOnCheckedChangeListener { _, isChecked ->

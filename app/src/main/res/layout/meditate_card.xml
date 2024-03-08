@@ -3,15 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:clickable="true"
-    android:paddingBottom="@dimen/margin_20dp">
+    android:clickable="true">
 
     <ImageView
         android:id="@+id/meditate_card_background"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/margin_5dp"
-        android:adjustViewBounds="true"
         android:contentDescription="@string/meditate_card_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -19,12 +16,11 @@
 
     <TextView
         android:id="@+id/meditate_card_title"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/small_margin"
-        android:layout_marginBottom="@dimen/base_margin"
+        android:fontFamily="@font/helvetica_neue_bold"
+        android:textColor="@color/white"
         android:textSize="@dimen/topic_font"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@id/meditate_card_background"
         app:layout_constraintEnd_toEndOf="@id/meditate_card_background"
         app:layout_constraintStart_toStartOf="@id/meditate_card_background" />
