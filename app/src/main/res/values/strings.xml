@@ -300,13 +300,14 @@
     <string name="mysharedpref">MySharedPref</string>
     <string name="name">name</string>
     <string name="btn_click_fail_1">А вот и нет</string>
-    <string name="button_click_fail_2">Не хочу...</string>
+    <string name="button_click_fail_2">Не хочу…</string>
     <string name="policy_toast">Тут будет политика конфиденциальности</string>
     <string name="button_click_failed_3">Ну уж нет</string>
     <string name="button_click_failed_4">Мета запрещена в РФ</string>
     <string name="unlucky">Увы</string>
     <string name="default_nickname">Afsar</string>
     <string name="time_with_us">1 year with us</string>
+    <string name="lock_icon">lock icon</string>
 
 
 </resources>

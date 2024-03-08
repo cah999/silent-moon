@@ -24,7 +24,7 @@
         android:src="@drawable/big_card_lock"
         app:layout_constraintStart_toStartOf="@id/sleep_big_card_background"
         app:layout_constraintTop_toTopOf="@id/sleep_big_card_background"
-        android:contentDescription="TODO" />
+        android:contentDescription="@string/lock_icon" />
 
     <TextView
         android:id="@+id/sleep_big_card_title"
