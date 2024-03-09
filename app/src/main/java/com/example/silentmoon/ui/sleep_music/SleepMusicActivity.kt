@@ -8,9 +8,9 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.silentmoon.R
 import com.example.silentmoon.databinding.ActivitySleepMusicBinding
+import com.example.silentmoon.ui.play_option.PlayOptionActivity
 import com.example.silentmoon.ui.sleep.SleepCardsAdapter
 import com.example.silentmoon.ui.sleep.SleepSpaceDecoration
-import com.example.silentmoon.ui.sleep_player.SleepMusicPlayer
 
 class SleepMusicActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySleepMusicBinding
@@ -22,7 +22,7 @@ class SleepMusicActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         viewModel = ViewModelProvider(this)[SleepMusicViewModel::class.java]
-        val intent = Intent(this, SleepMusicPlayer::class.java)
+        val intent = Intent(this, PlayOptionActivity::class.java)
 
         val recommendations: RecyclerView = binding.sleepMusicCards
         recommendations.setHasFixedSize(true)

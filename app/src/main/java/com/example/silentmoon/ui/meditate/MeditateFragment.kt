@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.example.silentmoon.R
 import com.example.silentmoon.databinding.FragmentMeditateBinding
+import com.example.silentmoon.ui.course.CourseActivity
 import com.example.silentmoon.ui.music.MusicActivity
 import com.example.silentmoon.ui.topic.TopicCardsAdapter
 import com.example.silentmoon.ui.utils.CategoriesAdapter
@@ -61,7 +62,7 @@ class MeditateFragment : Fragment(R.layout.fragment_meditate) {
 
             playBtn.setBackgroundResource(R.drawable.play_icon)
 
-            val intent = Intent(context, MusicActivity::class.java)
+            val intent = Intent(context, CourseActivity::class.java)
             playBtn.setOnClickListener { startActivity(intent) }
             bigCardBackground.setOnClickListener { startActivity(intent) }
         }
